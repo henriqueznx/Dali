@@ -1,6 +1,76 @@
 			/* GENERAL */
-		
-	
+
+html, body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#content {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 0 15px #fff inset; 
+	position: relative;
+	z-index: 10;
+}
+
+#back-colors {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#pink, #grey {
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+}
+
+.grey-closed{right: 0px;}
+.pink-closed{left: 0px;}
+.grey-open{right: -1000px;}
+.pink-open{left: -1000px;}
+
+#pink{background: #f26681;}
+#grey{background: #5e6679;}
+
+.opaque{opacity: 1;}
+.transparent{opacity: 0;}
+.none{display: none;}
+.block{display: block;}
+
+.opaque, .grey-closed, .pink-closed, .grey-open, .pink-open, .transparent {
+	-webkit-transition: all 3s ease;
+	-moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+	transition: all 3s ease;
+}
+
+#webdoc {
+	position: absolute;
+	left: 33%;
+	top: 45%;	
+}
+
+#content p {
+	font-family: 'Helvetica', cursive;
+	font-size: 80px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+}
+
+#contentbis {
+	z-index: 5;
+	color: #000;
+	background: red;
+}
+
 			
 			/* HEADER */
 			
