@@ -86,8 +86,9 @@ footer h2 {
 	color: #353535;
 	background: url('../img/border.png') no-repeat bottom center;
 	padding-bottom: 15px;
-	margin: 15px;
-	padding: 10px;
+	margin-bottom: 15px;
+	padding: 16px;
+	border-top: 3px solid rgba(245,229,208,0.90);
 }
 
 footer p {
