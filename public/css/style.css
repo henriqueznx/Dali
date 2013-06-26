@@ -69,6 +69,25 @@ nav{
 	margin-top: -160px;
 }
 
+.fade {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	background: url('../img/border2.png') no-repeat center 70px, url('../img/moustache.png') no-repeat center 0px;
+}
+
+.fade p {
+	font: 22px 'sakkal_majallabold', 'Arial', sans-serif;
+	color: #f4e4d0;
+	text-align: center;
+	border: 1px solid #f4e4d0;
+	padding: 0 10px 0 10px;
+	margin-top: 100px;
+}
+
+.fade p:hover {
+	background: rgba(197,197,197,0.50);
+}
 
 		/* SLIDE */
 
@@ -109,7 +128,6 @@ footer a {
 	position: absolute;
 	bottom: 0;
 	background: rgba(250,241,230,0.90);
-	z-index: 0;
 	width: 100%;
 	cursor: url('../img/cursor.png') 4 12, auto;
 }
@@ -123,8 +141,8 @@ footer a {
 	color: transparent;
 	background: url('../img/button.png') no-repeat;
 	opacity: 0.9;
-	z-index: 15;
 }
+
 
 .slide:hover {
 	cursor: url('../img/cursor.png'), auto;
