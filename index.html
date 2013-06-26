@@ -1,49 +1,89 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 
-	<title>Web documentaire - Animaux</title>
+	<title>Web document</title>
 	<link href="public/css/reset.css" rel="stylesheet">
+	<link href="public/css/fonts.css" rel="stylesheet">
 	<link href="public/css/style.css" rel="stylesheet">
 	<script src="public/js/open.js"></script>
+	<script src="public/js/jquery.min.js"></script>
 </head>
 
-<!-- BODY -->
-
 <body>
-
-<!-- HEADER -->
-
-<header>
+	<section>
+		<nav>
+			<ul class="flex">
+				<li><a href="#"><img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first">
+					<div class="fade"><p>Découvrir l'oeuvre</p></div>
+				</a></li>
+				<li><a href="#"><img src="public/uploads/lion_cheval_dormeuse_invisibles.jpg" alt="lion_cheval_dormeuse_invisibles" id="two"></a></li>
+				<li><a href="#"><img src="public/uploads/apparition_visage_compotier_sur_plage.png" alt="apparition_visage_compotier_sur_plage" id="three"></a></li>
+				<li><a href="#"><img src="public/uploads/image_disappears.jpg"  alt="image_disappears" id="four"></a></li>
+				<li><a href="#"><img src="public/uploads/mae_west.jpg" alt="mae_west" id="five"></a></li>
+			</ul>
+		</nav>
+	</section>
 	
-</header>
+		<footer>
+			<section id="description">
+				<h2>Né à Figueras le 11/05/1904 - Mort à Figueras le 23/01/1989</h2>
 
-<!-- END HEADER -->
+				<p>Après avoir étudié les beaux-arts à Madrid, Salvador Dalí s'intéresse très vite au mouvement surréaliste. Il lui donne une forme graphique totalement originale, fruit de son imagination débordante et influencée par la psychanalyse (Persistance de la mémoire, 1931 ; Construction molle avec des haricots bouillis : Prémonition de la guerre, 1936). Ses thèmes de prédilection sont la mort, l'érotisme, la putréfaction... mis en scène avec une parfaite maîtrise technique et un goût pour les images en trompe l'oeil.</p>
+			</section>
+			<button class="slide">SLIDE</button>
+			</footer>
 
-<div id="content">
-		<a href="#"><p onclick="opendoors()" id="webdoc" class="opaque">WEB - doc</p></a>
+<script>
+$(document).ready(function() {
+
+	/* SLIDE  */
+	
+	var expand = false;
+	$(".slide").on("click", function(){
+		if(($('#description').css("display")) == "none") {
+			$(".slide").animate({
+					marginBottom:"240"
+			},"fast");
+		} else if (($('#description').css("display")) == "block") {
+			$(".slide").animate({
+					marginBottom:"0"
+			},"fast");
+		}
+
+		$('#description').slideToggle('fast');
 		
-		<div id="contentbis">
-			<p>COUCOUCOUCOUCOU</p>
-			<h1>BLABLA</h1>
-		</div>
-</div>
+	});
 
-<div id="back-colors">
-	<div id="pink" class="pink-closed"></div>
-	<div id="grey" class="grey-closed"></div>
-</div>
+	/* FULLSCREEN  */
+	 
+	$('.flex li').css('height', $(window).height());
+	$('body').css('height', $(window).height());
+	
+	/* HOVER  */
+
+	$('.flex li').bind('mouseenter', function(el){
+		$('.flex li').css('width', '17.5%');
+		$(this).css('width', '30%');
+	});
+	$('.flex li').bind('mouseleave', function(el){
+		$('.flex li').css('width', '20%');
+	});
+	
+	$('.flex li img').bind('mouseenter', function(el){
+		$(this).fadeTo(100, 0.5);
+		$('.fade').fadeto(50, 1);
+		
+	});
+	$('.flex li img').bind('mouseleave', function(el){
+		$(this).fadeTo(100, 1);
+		$('.fade').fadeTo(50, 0.5);
+	});
 
 	
-<!-- FOOTER -->
-
-<footer>
-	
-</footer>
-
-<!-- END FOOTER -->
-
+	});
+</script>
 </body>
 </html>
