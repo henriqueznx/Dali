@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>Web document</title>
-		<link rel="stylesheet" href="public/css/reset.css" />
-		<link rel="stylesheet" href="public/css/fonts.css" />
-		<link rel="stylesheet" href="public/css/style.css" />
-		<script src="public/js/open.js"></script>
-		<script src="public/js/jquery.min.js"></script>
+<head>
+	<meta charset="utf-8">
+
+	<title>Web document</title>
+	<link href="public/css/reset.css" rel="stylesheet">
+	<link href="public/css/fonts.css" rel="stylesheet">
+	<link href="public/css/style.css" rel="stylesheet">
+	<script src="public/js/open.js"></script>
+	<script src="public/js/jquery.min.js"></script>
+</head>
+
+<body>
+	<section>
+		<nav>
+			<ul class="flex">
+				<li><a href="#"><img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first"></a></li>
+				<li><a href="#"><img src="public/uploads/lion_cheval_dormeuse_invisibles.jpg" alt="lion_cheval_dormeuse_invisibles" id="two"></a></li>
+				<li><a href="#"><img src="public/uploads/apparition_visage_compotier_sur_plage.png" alt="apparition_visage_compotier_sur_plage" id="three"></a></li>
+				<li><a href="#"><img src="public/uploads/image_disappears.jpg"  alt="image_disappears" id="four"></a></li>
+				<li><a href="#"><img src="public/uploads/mae_west.jpg" alt="mae_west" id="five"></a></li>
+			</ul>
+		</nav>
+	</section>
 	
-</script>
-	</head>
-	<body>
-		    <section id="contenido">
-		    <header>
-		    	<section id="description">
-	           		<h2>TITLE</h2>
-		           	<p> 
-Turpis placerat etiam tincidunt aliquam augue ut ac ultrices elementum et elementum! Nunc auctor in ut, ac aliquet lectus eu! Lectus sed a scelerisque rhoncus eros? Vut sagittis, urna magna, massa tristique in enim pulvinar eu mus risus ac parturient dictumst sagittis integer phasellus dapibus rhoncus eu sociis, sed magna, ut lundium! Parturient etiam nec enim urna non proin massa, turpis integer placerat non pulvinar in, eros nec pulvinar natoque cursus! Porttitor nec a. Tempor? Duis arcu eros ac diam nunc nisi duis eu magnis arcu nunc arcu, mattis ac? Tincidunt turpis vel diam sit augue, dis non tempor risus, placerat integer, et, nec. Lectus. Non et rhoncus, phasellus lorem platea nunc rhoncus sociis, proin! Dapibus, lectus, turpis lectus? Tincidunt.
-					</p>
-		       
-				</section>
-		    
-	    		<img class="slide" src="public/img/dali.png"/>  
-				</section>    		
-		    </header>
- 
-	</body>
-</html>
+		<footer>
+			<section id="description">
+				<h2>Né à Figueras le 11/05/1904 - Mort à Figueras le 23/01/1989</h2>
+
+				<p>Après avoir étudié les beaux-arts à Madrid, Salvador Dalí s'intéresse très vite au mouvement surréaliste. Il lui donne une forme graphique totalement originale, fruit de son imagination débordante et influencée par la psychanalyse (Persistance de la mémoire, 1931 ; Construction molle avec des haricots bouillis : Prémonition de la guerre, 1936). Ses thèmes de prédilection sont la mort, l'érotisme, la putréfaction... mis en scène avec une parfaite maîtrise technique et un goût pour les images en trompe l'oeil.</p>
+			</section>
+			<button class="slide">SLIDE</button>
+			</footer>
 
 <script>
 $(document).ready(function() {
 
-var expand = false;
-$("img.slide").on("click", function(){
-		$('#description').slideToggle('fast');
-});
+	/* SLIDE  */
+	
+	var expand = false;
+	$(".slide").on("click", function(){
+		if(($('#description').css("display")) == "none") {
+			$(".slide").animate({
+					marginBottom:"240"
+			},"fast");
+		} else if (($('#description').css("display")) == "block") {
+			$(".slide").animate({
+					marginBottom:"0"
+			},"fast");
+		}
 
-});
+		$('#description').slideToggle('fast');
+		
+	});
+
+
+	/* HOVER  */
+	 
+	$('.flex li').css('height', $(window).height());
+	$('body').css('height', $(window).height());
+
+	$('.flex li').bind('mouseenter', function(el){
+		$('.flex li').css('width', '17.5%');
+		$(this).css('width', '30%');
+	});
+	$('.flex li').bind('mouseleave', function(el){
+		$('.flex li').css('width', '20%');
+	});
+
+
+	});
 </script>
+</body>
+</html>
