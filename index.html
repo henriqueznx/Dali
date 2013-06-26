@@ -16,13 +16,46 @@
 	<section>
 		<nav>
 			<ul class="flex">
-				<li><a href="#"><img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first">
-					<div class="fade"><p>Découvrir l'oeuvre</p></div>
-				</a></li>
-				<li><a href="#"><img src="public/uploads/lion_cheval_dormeuse_invisibles.jpg" alt="lion_cheval_dormeuse_invisibles" id="two"></a></li>
-				<li><a href="#"><img src="public/uploads/apparition_visage_compotier_sur_plage.png" alt="apparition_visage_compotier_sur_plage" id="three"></a></li>
-				<li><a href="#"><img src="public/uploads/image_disappears.jpg"  alt="image_disappears" id="four"></a></li>
-				<li><a href="#"><img src="public/uploads/mae_west.jpg" alt="mae_west" id="five"></a></li>
+				<li>
+					<a href="#">
+						<img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first">
+						<div class="fade">
+							<p >Découvrir l'oeuvre</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="public/uploads/lion_cheval_dormeuse_invisibles.jpg" alt="lion_cheval_dormeuse_invisibles" id="two">
+						<div class="fade">
+							<p >Découvrir l'oeuvre</p>
+						</div>
+					</a>
+					</li>
+				<li>
+					<a href="#">
+						<img src="public/uploads/apparition_visage_compotier_sur_plage.png" alt="apparition_visage_compotier_sur_plage" id="three">
+						<div class="fade">
+							<p >Découvrir l'oeuvre</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="public/uploads/image_disappears.jpg"  alt="image_disappears" id="four">
+						<div class="fade">
+							<p >Découvrir l'oeuvre</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="public/uploads/mae_west.jpg" alt="mae_west" id="five">
+						<div class="fade">
+							<p >Découvrir l'oeuvre</p>
+						</div>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</section>
@@ -72,15 +105,15 @@ $(document).ready(function() {
 		$('.flex li').css('width', '20%');
 	});
 	
-	$('.flex li img').bind('mouseenter', function(el){
-		$(this).fadeTo(100, 0.5);
-		$('.fade').fadeto(50, 1);
-		
-	});
-	$('.flex li img').bind('mouseleave', function(el){
-		$(this).fadeTo(100, 1);
-		$('.fade').fadeTo(50, 0.5); 
-	});
+	// $('.flex li img').bind('mouseenter', function(el){
+	// 	$(this).fadeTo(100, 0.5);
+	// 	$('.fade').fadeto(50, 1);		
+	// });
+
+	// $('.flex li img').bind('mouseleave', function(el){
+	// 	$(this).fadeTo(100, 1);
+	// 	$('.fade').fadeTo(50, 0.5); 
+	// });
 
 	
 	});
