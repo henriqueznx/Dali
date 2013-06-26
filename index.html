@@ -8,35 +8,35 @@
 		<link rel="stylesheet" href="public/css/fonts.css" />
 		<link rel="stylesheet" href="public/css/style.css" />
 		<script src="public/js/open.js"></script>
+		<script src="public/js/jquery.min.js"></script>
+	
+</script>
 	</head>
 	<body>
-	<header id="head">
-		<div class="content">
-			<a href="#" id="firstlink">Salvador <b>Dali</b></a>
-			<h2>Né à Figueras le 11/05/1904 - Mort à Figueras le 23/01/1989</h2>
-			<p>Après avoir étudié les beaux-arts à Madrid, Salvador Dalí s'intéresse très vite au mouvement surréaliste. Il lui donne une forme graphique totalement originale, fruit de son imagination débordante et influencée par la psychanalyse (Persistance de la mémoire, 1931 ; Construction molle avec des haricots bouillis : Prémonition de la guerre, 1936). Ses thèmes de prédilection sont la mort, l'érotisme, la putréfaction... mis en scène avec une parfaite maîtrise technique et un goût pour les images en trompe l'oeil.</p>
-			<a href="#"><img src="public/img/dali.png" alt="dali"></a>
-		</div>
-	</header>
-	
-	<section>
-		<div class="content">
-		<h1>Choisissez l'oeuvre que vous souhaitez découvrir :</h1>
-			<ul>
-				<li><img src="public/uploads/un.png" alt="un" id="first"></li>
-				<li><img src="public/uploads/un.png" alt="un"></li>
-				<li><img src="public/uploads/un.png" alt="un"></li>
-				<li><img src="public/uploads/un.png" alt="un"></li>
-				<li><img src="public/uploads/un.png" alt="un"></li>
-			</ul>
-		</div>
-	</section>
-	
-	<footer>
-		<div class="content">
-		
-		</div>
-	</footer>
-	<script src="jquery.min.js"></script>
+		    <section id="contenido">
+		    <header>
+		    	<section id="description">
+	           		<h2>TITLE</h2>
+		           	<p> 
+Turpis placerat etiam tincidunt aliquam augue ut ac ultrices elementum et elementum! Nunc auctor in ut, ac aliquet lectus eu! Lectus sed a scelerisque rhoncus eros? Vut sagittis, urna magna, massa tristique in enim pulvinar eu mus risus ac parturient dictumst sagittis integer phasellus dapibus rhoncus eu sociis, sed magna, ut lundium! Parturient etiam nec enim urna non proin massa, turpis integer placerat non pulvinar in, eros nec pulvinar natoque cursus! Porttitor nec a. Tempor? Duis arcu eros ac diam nunc nisi duis eu magnis arcu nunc arcu, mattis ac? Tincidunt turpis vel diam sit augue, dis non tempor risus, placerat integer, et, nec. Lectus. Non et rhoncus, phasellus lorem platea nunc rhoncus sociis, proin! Dapibus, lectus, turpis lectus? Tincidunt.
+					</p>
+		       
+				</section>
+		    
+	    		<img class="slide" src="public/img/dali.png"/>  
+				</section>    		
+		    </header>
+ 
 	</body>
 </html>
+
+<script>
+$(document).ready(function() {
+
+var expand = false;
+$("img.slide").on("click", function(){
+		$('#description').slideToggle('fast');
+});
+
+});
+</script>
