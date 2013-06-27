@@ -216,7 +216,7 @@ nav {
 /* GENERAL DIV FRAME */
 
 #frame-one h2,#frame-two h2,#frame-three h2,#frame-four h2,#frame-five h2 {
-	font: 30px sakkal_majallaregular, Arial, sans-serif;
+	font: 18px 'marcellus_scregular', Arial, sans-serif;
 	color: #fff;
 	text-align: center;
 	padding-bottom: 55px;
@@ -225,7 +225,7 @@ nav {
 }
 
 #frame-one p,#frame-two p,#frame-three p,#frame-four p,#frame-five p {
-	font: 20px sakkal_majallaregular, Arial, sans-serif;
+	font: 20px 'Helvetica', Arial, sans-serif;
 	color: #fff;
 	text-align: center;
 	margin-top: 30px;
