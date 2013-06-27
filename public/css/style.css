@@ -180,7 +180,6 @@ nav {
 }
 
 .fade p {
-	width: 132px;
 	font: 22px sakkal_majallabold, Arial, sans-serif;
 	color: #f4e4d0;
 	text-align: center;
@@ -192,6 +191,26 @@ nav {
 		-ms-transition: all .2s linear;
 		 -o-transition: all .2s linear;
 			transition: all .2s linear;
+}
+#p1
+{
+	width: 144px;
+}
+#p2
+{
+	width: 144px;
+}
+#p3
+{
+	width: 124px;
+}
+#p4
+{
+	width: 105px;
+}
+#p5
+{
+	width: 61px;
 }
 
 .fade p:hover {
@@ -396,6 +415,18 @@ nav {
 	}
 /*********** SECTION - FRAME 1 - FIN **********/
 
+<<<<<<< HEAD
+=======
+#frame-one .bloc {
+	width: 450px;
+	height: 350px;
+	margin: 0 auto;
+	position: relative;
+	top: 20%;
+	background: #4a6a39;
+}
+
+>>>>>>> a70dc350900fb2bf70f2ceaa8525f6a34313ca8b
 /* CSS FRAME 2 */
 #frame-two .bloc {
 	width: 450px;
