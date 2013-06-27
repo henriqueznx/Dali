@@ -10,6 +10,9 @@
 </head>
 
 <body>
+	<header>
+		<audio src="public/audio/Bakermat_MasQueNada.mp3" autoplay="1">Veuillez mettre à jour votre navigateur !</audio>
+	</header>
 <!-- 	<div id="loader">
 		
 		<img class="tete_dali" src="public/uploads/salvador.png" alt="">
@@ -28,7 +31,7 @@
 				<ul class="flex">
 					<li>
 						<div id="frame1" class="cursor_frame">
-							<img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first">
+							<img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first" class="inactive">
 							<div class="fade">
 								<p >Découvrir l'oeuvre</p>
 							</div>
@@ -74,13 +77,24 @@
 	<section id="frame-one">
 	<!-- RELIER AU TABLEAU 1 DE LA HOME -->
 	<!-- INSERT CODE HERE -->
-	<div id="toHome"></div>
-	<div id="toTab2"></div>
+	<div class="bloc">
+		<h2>Marché d'esclaves avec apparition du buste invisible de Voltaire</h2>
+		<p>Voici « Marché aux esclaves avec apparition du buste invisible de Voltaire » datant de 1940. Ce tableau, outre son illusion, est particulier du fait qu'il est politique. Dali mets en scène Voltaire pour s'exprimer sur les idées de ce dernier. La femme de l'artiste, Gala, fait face au philosophe sur la toile.</p>
+	</div>
+	<button id="toHome" class="button-left">Préc.</button>
+	<button id="toTab2" class="button-right">Suiv.</button>
+	<button id="Scroll" class="button-down">Scroll down</button>
 	</section>
 
 	<section id="frame-two">
 	<!-- RELIER AU TABLEAU 2 DE LA HOME -->
-	<!-- INSERT CODE HERE -->
+	<div class="bloc">
+		<h2>Lion, Cheval et Dormeuses Invisibles</h2>
+		<p>Voici « Lion, Cheval, Dormeuse invisible » datant de 1930. Ce tableau marque le début du concept de paranoïa-critique basé sur les travaux sur l'inconscient de Freud. On trouve sur un même dessin de multiples images, une femme, une barque, un cheval ou encore un lion. Le thème de l'oeuvre se base sur cette multiplicité et le doute qu'elle apporte.</p>
+	</div>
+	<button id="toTab1" class="button-left">Préc.</button>
+	<button id="toTab3" class="button-right">Suiv.</button>
+	<button id="Scroll" class="button-down">Scroll down</button>
 	</section>
 
 			<footer>

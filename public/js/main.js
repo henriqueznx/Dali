@@ -95,6 +95,8 @@ $(document).ready(function(){
 	 
 	$('.flex li').css('height', $(window).height());
 	$('body').css('height', $(window).height());
+	$('#frame-one').css('height', $(window).height());
+	$('#frame-two').css('height', $(window).height());
 	
 	/* HOVER  */
 
@@ -105,6 +107,13 @@ $(document).ready(function(){
 	$('.flex li').bind('mouseleave', function(el){
 		$('.flex li').css('width', '20%');
 	});
+	
+	/*
+$('img#first img').bind('mouseenter', function(el){
+		$('#first img').removeClass('inactive');
+	});
+*/
+	
 	
 	// $('.flex li img').bind('mouseenter', function(el){
 	// 	$(this).fadeTo(100, 0.5);
