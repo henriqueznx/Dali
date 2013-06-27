@@ -122,6 +122,9 @@ document.getElementById('mute').addEventListener('click', function (e)
 	$('body').css('height', $(window).height());
 	$('#frame-one').css('height', $(window).height());
 	$('#frame-two').css('height', $(window).height());
+	$('#frame-three').css('height', $(window).height());
+	$('#frame-four').css('height', $(window).height());
+	$('#frame-five').css('height', $(window).height());
 	
 	/* HOVER  */
 
@@ -133,27 +136,17 @@ document.getElementById('mute').addEventListener('click', function (e)
 		$('.flex li').css('width', '20%');
 	});
 	
-	/*
-$('img#first img').bind('mouseenter', function(el){
-		$('#first img').removeClass('inactive');
-	});
-*/
-	
-	
-	// $('.flex li img').bind('mouseenter', function(el){
-	// 	$(this).fadeTo(100, 0.5);
-	// 	$('.fade').fadeto(50, 1);		
-	// });
+$('#frame-one').hide();
+$('#frame-two').hide();
+$('#frame-three').hide();
+$('#frame-four').hide();
+$('#frame-five').hide();
 
-	// $('.flex li img').bind('mouseleave', function(el){
-	// 	$(this).fadeTo(100, 1);
-	// 	$('.fade').fadeTo(50, 0.5); 
-	// });
 
 
 // FRAME 1
-$('#frame-one').hide();
-	$('#frame1').click(function(e){
+$('#frame1').click(function(e){
+// $('#frame-one').hide();
 		// console.log("lol");
 		TweenLite.set('#home');
 		TweenMax.to('#home', 1, 
@@ -162,71 +155,271 @@ $('#frame-one').hide();
  							$('#frame-one').show()
  				}
  			}
- 		);
+ 		)
 
  		TweenLite.fromTo('#frame-one', 1.5, 
 								{'margin-top': '90%', ease: Power1.easeIn},
 								{'margin-top': '0%', ease: Power1.easeIn}
-		);
+		)
 
 	});
 
-// POUR REVENIR AU TABLEAU PRECEDENT / HOME
-$('#toHome').click(function(e){
-		// console.log("lolHome");
-		TweenLite.set('#home');
+// POUR REVENIR AU TABLEAU PRECEDENT 5
+$('#toTab5from1').click(function(e){
+// $('#frame-five').hide();
 		TweenLite.to('#frame-one', 1, 
-			{'margin-left': '100%', ease: Power3.easeIn,
- 				onComplete: function(e){$("#frame-one").hide(),
- 							$('#home').show();
- 							TweenLite.fromTo('#home', 1, 
-								{'margin-left': '-100%', ease: Power4.easeInOut},
-								{'margin-left': '0%', ease: Power4.easeInOut}
-							)}
+			{left: '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-one").hide()
+ 				}
  			}
  		);
+$('#frame-five').show()
+ 		TweenLite.fromTo('#frame-five', 1.5,
+			{left: '-110%', ease: Power1.easeIn},
+			{left: '0%', ease: Power1.easeIn}
+		);
+});
 
-	});
 
 // POUR PASSER AU TABLEAU SUIVANT
 $('#toTab2').click(function(e){
-		// console.log("lolTab2");
 		TweenLite.to('#frame-one', 1, 
-			{'margin-right': '100%', ease: Power3.easeIn,
- 				onComplete: function(e){$("#frame-one").hide(),
- 							$('#frame-two').show();
- 							TweenLite.fromTo('#frame-two', 1, 
-								{'margin-left': '100%', ease: Power4.easeInOut},
-								{'margin-left': '0%', ease: Power4.easeInOut}
-							)}
+			{'margin-right': '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-one").hide()
+ 				}
  			}
- 		);
+ 		)
+ $('#frame-two').show();
+ 		TweenLite.fromTo('#frame-two', 1.5, 
+				{'margin-left': '100%', ease: Power1.easeIn},
+				{'margin-left': '0%', ease: Power1.easeIn}
+		)
 
 	});
 // FRAME 1 - FIN
 
 
 // FRAME 2
-$('#frame-two').hide();
-	$('#frame2').click(function(e){
-		// console.log("lol2");
+$('#frame2').click(function(e){
+// $('#frame-two').hide();
+		// console.log("lol");
 		TweenLite.set('#home');
 		TweenMax.to('#home', 1, 
-			{'margin-left': '-100%', ease: Power1.easeIn,
+			{'margin-top': '-100%', ease: Power1.easeIn,
  				onComplete: function(e){$("#home").hide(),
- 							$('#frame-two').show();
- 							TweenLite.fromTo('#frame-two', 1, 
-								{'margin-left': '130%', ease: Power4.easeInOut},
-								{'margin-left': '0%', ease: Power4.easeInOut}
-							)}
+ 							$('#frame-two').show()
+ 				}
+ 			}
+ 		)
+
+ 		TweenLite.fromTo('#frame-two', 1.3, 
+								{'margin-top': '90%', ease: Power1.easeIn},
+								{'margin-top': '0%', ease: Power1.easeIn}
+		)
+
+	});
+
+// POUR REVENIR AU TABLEAU PRECEDENT 1
+$('#toTab1').click(function(e){
+// $('#frame-one').hide();
+		TweenLite.to('#frame-two', 1, 
+			{left: '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-two").hide()
+ 				}
  			}
  		);
+
+$('#frame-one').show();
+ 		TweenLite.fromTo('#frame-one', 1.5,
+			{left: '-110%', ease: Power1.easeIn},
+			{left: '0%', ease: Power1.easeIn}
+		);
+});
+
+// POUR PASSER AU TABLEAU SUIVANT
+$('#toTab3').click(function(e){
+$('#frame-three').hide();
+		// console.log("lolTab2");
+		TweenLite.to('#frame-two', 1, 
+			{'margin-right': '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-two").hide()
+ 				}
+ 			}
+ 		)
+ $('#frame-three').show();
+ 		TweenLite.fromTo('#frame-three', 1.5, 
+				{'margin-left': '100%', ease: Power1.easeIn},
+				{'margin-left': '0%', ease: Power1.easeIn}
+		)
 
 	});
 // FRAME 2 - FIN
 
+// FRAME 3
+$('#frame3').click(function(e){
 $('#frame-three').hide();
+		// console.log("lol");
+		TweenLite.set('#home');
+		TweenMax.to('#home', 1, 
+			{'margin-top': '-100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#home").hide(),
+ 							$('#frame-three').show()
+ 				}
+ 			}
+ 		)
+
+ 		TweenLite.fromTo('#frame-three', 1.3, 
+								{'margin-top': '90%', ease: Power1.easeIn},
+								{'margin-top': '0%', ease: Power1.easeIn}
+		)
+
+	});
+
+// POUR REVENIR AU TABLEAU PRECEDENT 2
+$('#toTab2from3').click(function(e){
+// $('#frame-two').hide();
+		TweenLite.to('#frame-three', 1, 
+			{left: '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-three").hide()
+ 				}
+ 			}
+ 		);
+
+$('#frame-two').show();
+ 		TweenLite.fromTo('#frame-two', 1.5,
+			{left: '-110%', ease: Power1.easeIn},
+			{left: '0%', ease: Power1.easeIn}
+		);
+});
+
+// POUR PASSER AU TABLEAU SUIVANT
+$('#toTab4').click(function(e){
 $('#frame-four').hide();
-$('#frame-five').hide();
+		// console.log("lolTab2");
+		TweenLite.to('#frame-three', 1, 
+			{'margin-right': '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-three").hide()
+ 				}
+ 			}
+ 		)
+
+ $('#frame-four').show();
+ 		TweenLite.fromTo('#frame-four', 1.5, 
+				{'margin-left': '100%', ease: Power1.easeIn},
+				{'margin-left': '0%', ease: Power1.easeIn}
+		)
+
+	});
+// FRAME 3 - FIN
+
+// FRAME 4
+$('#frame4').click(function(e){
+// $('#frame-four').hide();
+		TweenLite.set('#home');
+		TweenMax.to('#home', 1, 
+			{'margin-top': '-100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#home").hide(),
+ 							$('#frame-four').show()
+ 				}
+ 			}
+ 		)
+
+ 		TweenLite.fromTo('#frame-four', 1.3, 
+								{'margin-top': '90%', ease: Power1.easeIn},
+								{'margin-top': '0%', ease: Power1.easeIn}
+		)
+
+	});
+
+// POUR REVENIR AU TABLEAU PRECEDENT 3
+$('#toTab3from4').click(function(e){
+// $('#frame-three').hide();
+		TweenLite.to('#frame-four', 1, 
+			{left: '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-four").hide()
+ 				}
+ 			}
+ 		);
+
+$('#frame-three').show();
+ 		TweenLite.fromTo('#frame-three', 1.5,
+			{left: '-110%', ease: Power1.easeIn},
+			{left: '0%', ease: Power1.easeIn}
+		);
+});
+
+// POUR PASSER AU TABLEAU SUIVANT
+$('#toTab5').click(function(e){
+// $('#frame-five').hide();
+	console.log('toTab5');
+		TweenLite.to('#frame-four', 1, 
+			{'margin-right': '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-four").hide()
+ 				}
+ 			}
+ 		);
+ $('#frame-five').show();
+ 		TweenLite.fromTo('#frame-five', 1.5, 
+				{'margin-left': '100%', ease: Power1.easeIn},
+				{'margin-left': '0%', ease: Power1.easeIn}
+		);
+
+	});
+// FRAME 4 - FIN
+
+// FRAME 5
+	$('#frame5').click(function(e){
+// $('#frame-five').hide();
+		TweenLite.set('#home');
+		TweenMax.to('#home', 1, 
+			{'margin-top': '-100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#home").hide(),
+ 							$('#frame-five').show()
+ 				}
+ 			}
+ 		)
+
+ 		TweenLite.fromTo('#frame-five', 1.3, 
+								{'margin-top': '90%', ease: Power1.easeIn},
+								{'margin-top': '0%', ease: Power1.easeIn}
+		)
+
+	});
+
+// POUR REVENIR AU TABLEAU PRECEDENT 4
+$('#toTab4from5').click(function(e){
+	// $('#frame-four').hide();
+		TweenLite.to('#frame-five', 1, 
+			{left: '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-five").hide()
+ 				}
+ 			}
+ 		);
+
+$('#frame-four').show();
+ 		TweenLite.fromTo('#frame-four', 1.5,
+			{left: '-110%', ease: Power1.easeIn},
+			{left: '0%', ease: Power1.easeIn}
+		);
+});
+
+// POUR PASSER AU TABLEAU SUIVANT
+$('#toTab1from5').click(function(e){
+	// $('#frame-one').hide();
+		TweenLite.to('#frame-five', 1, 
+			{'margin-right': '100%', ease: Power1.easeIn,
+ 				onComplete: function(e){$("#frame-five").hide()
+ 				}
+ 			}
+ 		);
+ $('#frame-one').show();
+ 		TweenLite.fromTo('#frame-one', 1.5, 
+				{'margin-left': '100%', ease: Power1.easeIn},
+				{'margin-left': '0%', ease: Power1.easeIn}
+		);
+
+	});
+// FRAME 5 - FIN
+
 
 });

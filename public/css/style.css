@@ -312,11 +312,24 @@ nav {
 }
 
 /* BUTTON HOVER */
+.btn1:hover {
+	background-color: #4a6a39;
+}
 
-#toHome:hover, #toTab2:hover {
-	background: url(../img/arrow_right.png) no-repeat center center #4a6a39;
-	height: 50px;
-	width: 35px;
+.btn2:hover {
+	background-color: #59403c;
+}
+
+.btn3:hover {
+	background-color: #758f84;
+}
+
+.btn4:hover {
+	background-color: #c8ab93;
+}
+
+.btn5:hover {
+	background-color: #7e1617;
 }
 
 /* CSS FRAME 1 */
@@ -327,6 +340,7 @@ nav {
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
+	position: relative;
 }
 
 #frame-one .bloc {
@@ -346,6 +360,7 @@ nav {
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
+	position: relative;
 }
 
 #frame-two .bloc {
@@ -365,6 +380,7 @@ nav {
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
+	position: relative;
 }
 
 #frame-three .bloc {
@@ -384,6 +400,7 @@ nav {
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
+	position: relative;
 }
 
 #frame-four .bloc {
@@ -403,6 +420,7 @@ nav {
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
+	position: relative;
 }
 
 #frame-five .bloc {
