@@ -1,12 +1,12 @@
 /* LOADER */
 
 body {
-	/*background: #fff;*/
-	/*overflow: hidden;*/
+/*background: #fff;*/
+/*overflow: hidden;*/
 }
 
 #maincontent {
-	/*display: none;*/
+/*display: none;*/
 }
 
 #loader {
@@ -16,8 +16,7 @@ body {
 	z-index: 9999;
 }
 
-
-#background_left, #background_right {
+#background_left,#background_right {
 	position: absolute;
 	width: 50%;
 	height: 100%;
@@ -26,77 +25,74 @@ body {
 	opacity: 0;
 	overflow: hidden;
 	-webkit-transition: all .5s linear;
-       -moz-transition: all .5s linear;
-    	-ms-transition: all .5s linear;
-    	 -o-transition: all .5s linear;
-    		transition: all .5s linear; 
+	-moz-transition: all .5s linear;
+	-ms-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
 }
 
-	#background_left {
-		left: 0%;
-	}
+#background_left {
+	left: 0;
+}
 
-	#background_right {
-		right: 0%;
-	}
+#background_right {
+	right: 0;
+}
 
 .tete_dali {
 	position: absolute;
 	left: 50%;
-	bottom: 50%; 
+	bottom: 50%;
 	display: none;
 	margin-left: -200px;
-	bottom: 0%;
-
+	bottom: 0;
 }
 
 #stache-left {
 	left: 50%;
-	margin-left: -260px; 
+	margin-left: -260px;
 	-webkit-transition: all .5s linear;
-       -moz-transition: all .5s linear;
-    	-ms-transition: all .5s linear;
-    	 -o-transition: all .5s linear;
-    		transition: all .5s linear; 
-    position: absolute;
+	-moz-transition: all .5s linear;
+	-ms-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
+	position: absolute;
 }
-
 
 #stache-right {
 	right: 50%;
-	margin-right: -260px; 
+	margin-right: -260px;
 	-webkit-transition: all .5s linear;
-       -moz-transition: all .5s linear;
-    	-ms-transition: all .5s linear;
-    	 -o-transition: all .5s linear;
-    		transition: all .5s linear;
-    position: absolute;
+	-moz-transition: all .5s linear;
+	-ms-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
+	position: absolute;
 }
-
 
 #container {
 	position: absolute;
 	width: 100%;
 	height: 446px;
-	bottom: 0%;
+	bottom: 0;
 	margin: 0 auto;
-} 
+}
 
-/* LOADER - FIN*/
+/* FIN LOADER */
 
 
-		/* GENERAL */
-		
-		
+/* GENERAL */
+
 .content {
 	max-width: 1024px;
 	margin: 0 auto;
 }
 
-		/* IMAGES */
+/* HOME */
+
 nav {
-	height:100%;
-	min-height:100%;
+	height: 100%;
+	min-height: 100%;
 }
 
 .flex {
@@ -114,14 +110,12 @@ nav {
 	width: 20%;
 	overflow: hidden;
 	position: relative;
-	-webkit-transition: all 0.4s ease;
-	   -moz-transition: all 0.4s ease;
-		-ms-transition: all 0.4s ease;
-		 -o-transition: all 0.4s ease;
-			transition: all 0.4s ease;
-
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
 }
-
 
 .flex li:nth-child(5) {
 	position: absolute;
@@ -140,19 +134,10 @@ nav {
 	margin-right: -530px;
 }
 
-
 #three {
 	margin-right: -450px;
 	margin-top: -400px;
 }
-
-
-/*
-#three {
-	margin-right: -850px;
-	margin-top: -500px;
-}
-*/
 
 #four {
 	margin-top: -650px;
@@ -164,37 +149,36 @@ nav {
 	margin-top: -160px;
 }
 
-
-/*_____HOVER - HOME_____*/
+/* HOVER HOME */
 
 .fade {
 	position: absolute;
-	top: 0%;
-	left: 0%;
+	top: 0;
+	left: 0;
 	height: 100%;
 	width: 100%;
-	background: url('../img/border2.png') no-repeat center 50%, url('../img/moustache.png') no-repeat center 40% , rgba(0,0,0,0.5);
+	background: url(../img/border2.png) no-repeat center 50% url(../img/moustache.png) no-repeat center 40% , rgba(0,0,0,0.5);
 	opacity: 0;
-	-webkit-transition: all 0.4s linear;
-	   -moz-transition: all 0.4s linear;
-		-ms-transition: all 0.4s linear;
-		 -o-transition: all 0.4s linear;
-			transition: all 0.4s linear;
+	-webkit-transition: all .4s linear;
+	-moz-transition: all .4s linear;
+	-ms-transition: all .4s linear;
+	-o-transition: all .4s linear;
+	transition: all .4s linear;
 }
 
 .fade p {
 	width: 132px;
-	font: 22px 'sakkal_majallabold', 'Arial', sans-serif;
+	font: 22px sakkal_majallabold, Arial, sans-serif;
 	color: #f4e4d0;
 	text-align: center;
 	border: 1px solid #f4e4d0;
 	padding: 0 10px;
-	margin: 380px auto 0 auto;
-	-webkit-transition: all 0.2s linear;
-	   -moz-transition: all 0.2s linear;
-		-ms-transition: all 0.2s linear;
-		 -o-transition: all 0.2s linear;
-			transition: all 0.2s linear;
+	margin: 380px auto 0;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
 }
 
 .fade p:hover {
@@ -205,165 +189,115 @@ nav {
 	opacity: 1;
 }
 
-
-/*_____HOVER - HOME - FIN_____*/
-
-
-		/* SLIDE */
-
-footer {
-	clear: both;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-}
-
-footer h2 {
-	text-align: center;
-	font: 22px 'sakkal_majallabold', 'Arial', sans-serif;
-	color: #353535;
-	background: url('../img/border.png') no-repeat bottom center;
-	padding-bottom: 15px;
-	margin-bottom: 15px;
-	padding: 16px;
-	border-top: 3px solid rgba(245,229,208,0.90);
-}
-
-footer p {
-	text-align: justify;
-	font: 18px 'sakkal_majallabold', 'Arial', sans-serif;
-	color: #353535;
-	padding-bottom: 30px;
-	width: 600px;
-	margin: 0 auto;
-}
-
-footer a {
-	color: red;
-	text-align: center;
-}
-#description {
-	display: none;
-	position: absolute;
-	bottom: 0;
-	background: rgba(250,241,230,0.90);
-	width: 100%;
-	cursor: url('../img/cursor.png') 4 12, auto;
-}
-
-.slide {
-	display: block; 
-	width: 107px;
-	height: 47px;
-	margin: 0 auto;
-	border: 0;
-	color: transparent;
-	background: url('../img/button.png') no-repeat;
-	opacity: 0.9;
-}
+/* FIN HOME */
 
 
-.slide:hover {
-	cursor: url('../img/cursor.png'), auto;
-}
+/* MODELE POUR LES TRANSITIONS */
 
-
-
-/****** MODELE POUR LES TRANSITIONS ******/
-
-
-#home { /*DIV ENTOURANT LA PARTI HOME DU SITE*/
-	/*background: red;*/
+#home { 					/*DIV ENTOURANT LA PARTI HOME DU SITE*/
 	width: 100%;
 	height: 100%;
-	position: relative;
-	z-index: 900;
+	/*background: red;*/
 }
 
 /* GENERAL DIV FRAME */
 
-#frame-one h2, #frame-two h2, #frame-three h2, #frame-four h2, #frame-five h2 { /* DIV ENTOURANT LE CODE DE LA DESCRIPTION DU TABLEAU 1*/
-	font: 30px 'sakkal_majallaregular', 'Arial', sans-serif;
+#frame-one h2,#frame-two h2,#frame-three h2,#frame-four h2,#frame-five h2 {
+	font: 30px sakkal_majallaregular, Arial, sans-serif;
 	color: #fff;
 	text-align: center;
 	padding-bottom: 55px;
 	padding-top: 35px;
-	background: url('../img/moustache.png') no-repeat center bottom;
+	background: url(../img/moustache.png) no-repeat center bottom;
 }
 
-#frame-one p, #frame-two p, #frame-three p, #frame-four p, #frame-five p { /* DIV ENTOURANT LE CODE DE LA DESCRIPTION DU TABLEAU 1*/
-	font: 20px 'sakkal_majallaregular', 'Arial', sans-serif;
+#frame-one p,#frame-two p,#frame-three p,#frame-four p,#frame-five p {
+	font: 20px sakkal_majallaregular, Arial, sans-serif;
 	color: #fff;
 	text-align: center;
 	margin-top: 30px;
 	padding: 0 25px;
-} 
+}
 
-	/* BUTTON */
-        
-	.button-left {
-		height: 29px;
-		width: 19px;
-		margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 0;
-		background: url(../img/arrow_right.png) no-repeat center center transparent;
-		-webkit-transform: rotate(180deg);
-		-moz-transform: rotate(180deg);
-		-ms-transform: rotate(180deg);
-		-o-transform: rotate(180deg);
-		transform: rotate(180deg);
-		cursor: pointer;
-		position: absolute;
-		left: 1%;
-		top: 50%;
-	}
-	 
-	.button-right {
-		height: 29px;
-		width: 19px;
-		margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 0;
-		background: url(../img/arrow_right.png) no-repeat center center transparent;
-		cursor: pointer;
-		position: absolute;
-		right: 1%;
-		top: 50%;
-	}
-	
-	.button-down {
-		position: absolute;
-		height: 30px;
-		width: 150px;
-		border: 1px solid #fff;
-		text-align: center;
-		text-transform: uppercase;
-		font: 18px 'sakkal_majallaregular', 'Arial', sans-serif;
-		background:transparent;
-		line-height: 30px;
-		color: #fff;
-		margin: 0;
-        padding: 0;
-        cursor: pointer;
-        top: 80%;
-        left: 44%;
-	}
+/* BUTTON */
 
-/* DIV ENTOURANT LE CODE DE LA DESCRIPTION DU TABLEAU 1*/
+.button-left {
+	height: 50px;
+	width: 35px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+	background: url(../img/arrow_right.png) no-repeat center center transparent;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.button-right {
+	height: 50px;
+	width: 35px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+	background: url(../img/arrow_right.png) no-repeat center center transparent;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.button-down {
+	position: absolute;
+	height: 30px;
+	width: 100px;
+	border: 1px solid #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font: 18px sakkal_majallaregular, Arial, sans-serif;
+	background: transparent;
+	line-height: 30px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	top: 80%;
+	left: 46%;
+}
+
+/* BUTTON HOVER */
+
+#toHome:hover, #toTab2:hover {
+	background: url(../img/arrow_right.png) no-repeat center center #4a6a39;
+	height: 50px;
+	width: 35px;
+}
+
+/* CSS FRAME 1 */
 
 #frame-one {
-	background: url('../img/marche_esclaves_apparition_buste_Voltaire_COVER.jpg') no-repeat center center fixed; 
+	background: url(../img/marche_esclaves_apparition_buste_Voltaire_COVER.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-	position: relative;
-	height: 100%;
-	width: 100%;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #frame-one .bloc {
@@ -375,16 +309,24 @@ footer a {
 	background: #4a6a39;
 }
 
-/* DIV ENTOURANT LE CODE DE LA DESCRIPTION DU TABLEAU 2*/
+/* CSS FRAME 2 */
 
 #frame-two {
-	background: url('../img/lion_cheval_dormeuse_invisibles_COVER.jpg') no-repeat center center fixed; 
+	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
+<<<<<<< HEAD
+#home { /*DIV ENTOURANT LA PARTI HOME DU SITE*/
+	/*background: red;*/
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 900;
+=======
 #frame-two .bloc {
 	width: 450px;
 	height: 330px;
@@ -392,9 +334,121 @@ footer a {
 	position: relative;
 	top: 20%;
 	background: #59403c;
+>>>>>>> e2ffccba2871fb8e0628468028adbf3ff40672f2
 }
 
+/* CSS FRAME 3 */
 
+#frame-three {
+	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
+#frame-three .bloc {
+	width: 450px;
+	height: 330px;
+	margin: 0 auto;
+	position: relative;
+	top: 20%;
+	background: #758f84;
+}
 
+/* CSS FRAME 4 */
 
+#frame-four {
+	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#frame-four .bloc {
+	width: 450px;
+	height: 330px;
+	margin: 0 auto;
+	position: relative;
+	top: 20%;
+	background: #c8ab93;
+}
+
+/* CSS FRAME 5 */
+
+#frame-five {
+	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#frame-five .bloc {
+	width: 450px;
+	height: 330px;
+	margin: 0 auto;
+	position: relative;
+	top: 20%;
+	background: #7e1617;
+}
+
+/* FOOTER SLIDE */
+
+footer {
+	clear: both;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+footer h2 {
+	text-align: center;
+	font: 22px sakkal_majallabold, Arial, sans-serif;
+	color: #353535;
+	background: url(../img/border.png) no-repeat bottom center;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	padding: 16px;
+	border-top: 3px solid rgba(245,229,208,0.90);
+}
+
+footer p {
+	text-align: justify;
+	font: 18px sakkal_majallabold, Arial, sans-serif;
+	color: #353535;
+	padding-bottom: 30px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+footer a {
+	color: red;
+	text-align: center;
+}
+
+#description {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	background: rgba(250,241,230,0.90);
+	width: 100%;
+	cursor: pointer;
+}
+
+.slide {
+	display: block;
+	width: 107px;
+	height: 47px;
+	margin: 0 auto;
+	border: 0;
+	color: transparent;
+	background: url(../img/button.png) no-repeat;
+	opacity: 0.9;
+	cursor: pointer;
+}
