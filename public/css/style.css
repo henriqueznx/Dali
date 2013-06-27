@@ -228,8 +228,7 @@ nav {
 	font: 20px 'Helvetica', Arial, sans-serif;
 	color: #fff;
 	text-align: center;
-	margin-top: 30px;
-	padding: 0 25px;
+	padding: 30px 25px 0 25px;
 }
 
 /* BUTTON */
@@ -333,15 +332,61 @@ nav {
 }
 
 /* CSS FRAME 1 */
-
-#frame-one {
+/*********** SECTION - FRAME 1 - **********/
+#section1tab1 {
 	background: url(../img/marche_esclaves_apparition_buste_Voltaire_COVER.jpg) no-repeat center center fixed;
+	/*background: red;*/
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
 	position: relative;
+	width: 100%;
+	height: 100%;
 }
+
+#section2tab1 {	
+	background: url(../img/marche_esclaves_apparition_buste_Voltaire_COVER.jpg) no-repeat 100% 50% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+	#section2tab1 p {
+		width: 250px;
+		background: #4a6a39;
+		padding: 25px 30px;
+		margin-left: 130px;  
+	}
+
+#section3tab1 {
+	background: url(../img/marche_esclaves_apparition_buste_Voltaire_COVER.jpg) no-repeat -0% 50% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#section3tab1 p.text {
+	width: 238px;
+	height: 268px;
+	overflow:scroll;
+	background: #4a6a39;
+	padding: 25px 30px;
+	margin-left: 90px;  
+}
+
+	#section3tab1 p.citation {
+		position: absolute;
+		background: #fff;
+		color: #4a6a39;
+		bottom: 25px;
+		left: 50%;
+		margin-left: -210px;
+		width: 420px;
+		padding: 10px 0 10px 0;
+	}
+/*********** SECTION - FRAME 1 - FIN **********/
 
 #frame-one .bloc {
 	width: 450px;
