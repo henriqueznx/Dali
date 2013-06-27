@@ -398,16 +398,6 @@ nav {
 }
 
 /* CSS FRAME 2 */
-
-#frame-two {
-	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-	position: relative;
-}
-
 #frame-two .bloc {
 	width: 450px;
 	height: 330px;
@@ -416,6 +406,34 @@ nav {
 	top: 20%;
 	background: #59403c;
 }
+/*********** SECTION - FRAME 2 - **********/
+#section1tab2 {
+	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat center center fixed;
+	/*background: red;*/
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#section2tab2 {	
+	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat 100% 50% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+	#section2tab2 p {
+		width: 250px;
+		background: #59403c;
+		padding: 25px 30px;
+		margin-left: 130px;  
+	}
+/*********** SECTION - FRAME 2 - FIN **********/
 
 /* CSS FRAME 3 */
 
