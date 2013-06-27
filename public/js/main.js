@@ -135,16 +135,15 @@ document.getElementById('mute').addEventListener('click', function (e)
 	$('.flex li').bind('mouseleave', function(el){
 		$('.flex li').css('width', '20%');
 	});
-
 	
-	$('#frame-one').hide();
-	$('#frame-two').hide();
-	$('#frame-three').hide();
-	$('#frame-four').hide();
-	$('#frame-five').hide();
+$('#frame-one').hide();
+$('#frame-two').hide();
+$('#frame-three').hide();
+$('#frame-four').hide();
+$('#frame-five').hide();
 
 
-/*
+
 // FRAME 1
 $('#frame1').click(function(e){
 // $('#frame-one').hide();
@@ -424,8 +423,3 @@ $('#toTab1from5').click(function(e){
 
 
 });
-*/
-
-
-/* Slider */
-
