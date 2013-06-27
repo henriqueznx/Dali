@@ -74,10 +74,23 @@ $(document).ready(function(){
 
 	/* SLIDE  */
 	
-	var expand = false;
 	$(".slide").on("click", function(){
 		if(($('#description').css("display")) == "none") {
-			TweenLite.set('.slide');
+			$(".slide").animate({
+					marginBottom:"240"
+			},"slow");
+		} else if (($('#description').css("display")) == "block") {
+			$(".slide").animate({
+					marginBottom:"0"
+			},"slow");
+		}
+
+		$('#description').slideToggle('slow');
+		
+	});
+	
+	$("#description").on("click", function(){
+		if(($('#description').css("display")) == "none") {
 			$(".slide").animate({
 					marginBottom:"240"
 			},"slow");
