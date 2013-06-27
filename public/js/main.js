@@ -120,7 +120,7 @@ $(document).ready(function(){
 // FRAME 1
 $('#frame-one').hide();
 	$('#frame1').click(function(e){
-		console.log("lol");
+		// console.log("lol");
 		TweenLite.set('#home');
 		TweenMax.to('#home', 1, 
 			{'margin-left': '-100%', ease: Power1.easeIn,
@@ -135,9 +135,9 @@ $('#frame-one').hide();
 
 	});
 
-
+// POUR REVENIR AU TABLEAU PRECEDENT / HOME
 $('#toHome').click(function(e){
-		console.log("lolHome");
+		// console.log("lolHome");
 		TweenLite.set('#home');
 		TweenLite.to('#frame-one', 1, 
 			{'margin-left': '100%', ease: Power3.easeIn,
@@ -152,9 +152,9 @@ $('#toHome').click(function(e){
 
 	});
 
-
+// POUR PASSER AU TABLEAU SUIVANT
 $('#toTab2').click(function(e){
-		console.log("lolTab2");
+		// console.log("lolTab2");
 		TweenLite.to('#frame-one', 1, 
 			{'margin-right': '100%', ease: Power3.easeIn,
  				onComplete: function(e){$("#frame-one").hide(),
@@ -167,14 +167,13 @@ $('#toTab2').click(function(e){
  		);
 
 	});
-
 // FRAME 1 - FIN
+
 
 // FRAME 2
 $('#frame-two').hide();
 	$('#frame2').click(function(e){
-		console.log("lol2");
-		// $('#frame-one').show();
+		// console.log("lol2");
 		TweenLite.set('#home');
 		TweenMax.to('#home', 1, 
 			{'margin-left': '-100%', ease: Power1.easeIn,
