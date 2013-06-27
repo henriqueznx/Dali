@@ -332,6 +332,14 @@ nav {
 }
 
 /* CSS FRAME 1 */
+#frame-one .bloc {
+	width: 450px;
+	height: 330px;
+	margin: 0 auto;
+	position: relative;
+	top: 20%;
+	background: #4a6a39;
+}
 /*********** SECTION - FRAME 1 - **********/
 #section1tab1 {
 	background: url(../img/marche_esclaves_apparition_buste_Voltaire_COVER.jpg) no-repeat center center fixed;
@@ -388,15 +396,6 @@ nav {
 	}
 /*********** SECTION - FRAME 1 - FIN **********/
 
-#frame-one .bloc {
-	width: 450px;
-	height: 330px;
-	margin: 0 auto;
-	position: relative;
-	top: 20%;
-	background: #4a6a39;
-}
-
 /* CSS FRAME 2 */
 #frame-two .bloc {
 	width: 450px;
@@ -433,18 +432,25 @@ nav {
 		padding: 25px 30px;
 		margin-left: 130px;  
 	}
+
+#section2tab2 .text {
+	overflow:scroll;
+	height: 200px;
+}
+
+	#section2tab2 p.citation {
+		position: absolute;
+		background: #fff;
+		color: #4a6a39;
+		bottom: 25px;
+		left: 50%;
+		margin-left: -210px;
+		width: 420px;
+		padding: 10px 0 10px 0;
+	}
 /*********** SECTION - FRAME 2 - FIN **********/
 
 /* CSS FRAME 3 */
-
-#frame-three {
-	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-	position: relative;
-}
 
 #frame-three .bloc {
 	width: 450px;
@@ -454,18 +460,64 @@ nav {
 	top: 20%;
 	background: #758f84;
 }
-
-/* CSS FRAME 4 */
-
-#frame-four {
+/*********** SECTION - FRAME 3 - **********/
+#section1tab3 {
 	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat center center fixed;
+	/*background: red;*/
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
 	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
+#section2tab3 {	
+	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat 100% 50% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+	#section2tab3 p {
+		width: 250px;
+		background: #758f84;
+		padding: 25px 30px;
+		margin-left: 130px;  
+	}
+
+#section3tab3 {
+	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat -0% 50% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#section3tab3 p.text {
+	width: 238px;
+	height: 268px;
+	overflow:scroll;
+	background: #758f84;
+	padding: 25px 30px;
+	margin-left: 90px;  
+}
+
+	#section3tab3 p.citation {
+		position: absolute;
+		background: #fff;
+		color: #758f84;
+		bottom: 25px;
+		left: 50%;
+		margin-left: -210px;
+		width: 420px;
+		padding: 10px 0 10px 0;
+	}
+/*********** SECTION - FRAME 3 - FIN **********/
+
+/* CSS FRAME 4 */
 #frame-four .bloc {
 	width: 450px;
 	height: 330px;
@@ -474,18 +526,52 @@ nav {
 	top: 20%;
 	background: #c8ab93;
 }
-
-/* CSS FRAME 5 */
-
-#frame-five {
-	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat center center fixed;
+/*********** SECTION - FRAME 4 - **********/
+#section1tab4 {
+	background: url(../img/image_disappears.jpg) no-repeat center center fixed;
+	/*background: red;*/
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 		 -o-background-size: cover;
 			background-size: cover;
 	position: relative;
+	width: 100%;
+	height: 100%;
 }
 
+#section2tab4 {	
+	background: url(../img/image_disappears.jpg) no-repeat 100% 50% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+	#section2tab4 p {
+		width: 250px;
+		background: #c8ab93;
+		padding: 25px 30px;
+		margin-left: 130px;  
+	}
+
+#section2tab4 .text {
+	overflow:scroll;
+	height: 200px;
+}
+
+	#section2tab4 p.citation {
+		position: absolute;
+		background: #fff;
+		color: #c8ab93;
+		bottom: 25px;
+		left: 50%;
+		margin-left: -210px;
+		width: 420px;
+		padding: 10px 0 10px 0;
+	}
+/*********** SECTION - FRAME 4 - FIN **********/
+
+/* CSS FRAME 5 */
 #frame-five .bloc {
 	width: 450px;
 	height: 330px;
@@ -494,6 +580,75 @@ nav {
 	top: 20%;
 	background: #7e1617;
 }
+
+/*********** SECTION - FRAME 5 - **********/
+#section1tab5 {
+	background: url(../img/mae_west.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#section2tab5 {	
+	background: url(../img/mae_west.jpg) no-repeat 100% 50% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+	#section2tab5 p.text {
+		width: 250px;
+		height: 250px;
+		background: #7e1617;
+		overflow: scroll;
+		padding: 25px 30px;
+		margin-left: 130px;  
+	}
+	#section2tab5 p.citation {
+		position: absolute;
+		background: #fff;
+		color: #7e1617;
+		bottom: 25px;
+		left: 50%;
+		margin-left: -225px;
+		width: 450px;
+
+		padding: 10px 0 10px 0;
+	}
+
+#section3tab5 {
+	background: url(../img/mae_west.jpg) no-repeat -0% 50% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#section3tab5 p.text {
+	width: 238px;
+	height: 268px;
+	overflow:scroll;
+	background: #7e1617;
+	padding: 25px 30px;
+	margin-left: 90px;  
+}
+
+	#section3tab5 p.citation {
+		position: absolute;
+		background: #fff;
+		color: #7e1617;
+		bottom: 25px;
+		left: 50%;
+		margin-left: -210px;
+		width: 420px;
+		padding: 10px 0 10px 0;
+	}
+/*********** SECTION - FRAME 5 - FIN **********/
 
 /* FOOTER SLIDE */
 
