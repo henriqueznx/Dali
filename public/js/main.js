@@ -126,6 +126,7 @@ document.getElementById('mute').addEventListener('click', function (e)
 	$('#frame-four').css('height', $(window).height());
 	$('#frame-five').css('height', $(window).height());
 	
+	
 	/* HOVER  */
 
 	$('.flex li').bind('mouseenter', function(el){

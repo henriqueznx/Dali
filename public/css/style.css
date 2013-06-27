@@ -234,7 +234,7 @@ nav {
 
 /* GENERAL DIV FRAME */
 
-#frame-one h2,#frame-two h2,#frame-three h2,#frame-four h2,#frame-five h2 {
+#frame-one h2, #frame-two h2, #frame-three h2, #frame-four h2, #frame-five h2 {
 	font: 18px 'marcellus_scregular', Arial, sans-serif;
 	color: #fff;
 	text-align: center;
@@ -243,12 +243,14 @@ nav {
 	background: url(../img/moustache.png) no-repeat center bottom;
 }
 
-#frame-one p,#frame-two p,#frame-three p,#frame-four p,#frame-five p {
-	font: 20px 'Helvetica', Arial, sans-serif;
+#frame-one p, #frame-two p, #frame-three p, #frame-four p, #frame-five p {
+	font: 20px 'sakkal_majallaregular', Arial, sans-serif;
 	color: #fff;
 	text-align: center;
 	padding: 30px 25px 0 25px;
 }
+	
+
 
 /* BUTTON */
 
@@ -356,7 +358,7 @@ nav {
 	height: 330px;
 	margin: 0 auto;
 	position: relative;
-	top: 20%;
+	top: 15%;
 	background: #4a6a39;
 }
 /*********** SECTION - FRAME 1 - **********/
@@ -408,25 +410,22 @@ nav {
 		background: #fff;
 		color: #4a6a39;
 		bottom: 25px;
-		left: 50%;
-		margin-left: -210px;
+		left: 40%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
 /*********** SECTION - FRAME 1 - FIN **********/
 
-<<<<<<< HEAD
-=======
 #frame-one .bloc {
 	width: 450px;
 	height: 350px;
 	margin: 0 auto;
 	position: relative;
-	top: 20%;
+	top: 15%;
 	background: #4a6a39;
 }
 
->>>>>>> a70dc350900fb2bf70f2ceaa8525f6a34313ca8b
+
 /* CSS FRAME 2 */
 #frame-two .bloc {
 	width: 450px;
@@ -436,6 +435,7 @@ nav {
 	top: 20%;
 	background: #59403c;
 }
+
 /*********** SECTION - FRAME 2 - **********/
 #section1tab2 {
 	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat center center fixed;
@@ -450,7 +450,7 @@ nav {
 }
 
 #section2tab2 {	
-	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat 100% 50% fixed;
+	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat 80% 50% fixed;
 	background-size: 1598px 1111px;
 	position: relative;
 	width: 100%;
@@ -474,8 +474,7 @@ nav {
 		background: #fff;
 		color: #4a6a39;
 		bottom: 25px;
-		left: 50%;
-		margin-left: -210px;
+		left: 35%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
@@ -488,7 +487,7 @@ nav {
 	height: 330px;
 	margin: 0 auto;
 	position: relative;
-	top: 20%;
+	top: 15%;
 	background: #758f84;
 }
 /*********** SECTION - FRAME 3 - **********/
@@ -505,7 +504,7 @@ nav {
 }
 
 #section2tab3 {	
-	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat 100% 50% fixed;
+	background: url(../img/apparition_visage_compotier_sur_plage_COVER.jpg) no-repeat 90% 0% fixed;
 	background-size: 1598px 1111px;
 	position: relative;
 	width: 100%;
@@ -541,8 +540,7 @@ nav {
 		background: #fff;
 		color: #758f84;
 		bottom: 25px;
-		left: 50%;
-		margin-left: -210px;
+		left: 40%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
@@ -554,7 +552,7 @@ nav {
 	height: 330px;
 	margin: 0 auto;
 	position: relative;
-	top: 20%;
+	top: 15%;
 	background: #c8ab93;
 }
 /*********** SECTION - FRAME 4 - **********/
@@ -571,7 +569,7 @@ nav {
 }
 
 #section2tab4 {	
-	background: url(../img/image_disappears.jpg) no-repeat 100% 50% fixed;
+	background: url(../img/image_disappears.jpg) no-repeat 35% 50% fixed;
 	background-size: 1598px 1111px;
 	position: relative;
 	width: 100%;
@@ -595,8 +593,7 @@ nav {
 		background: #fff;
 		color: #c8ab93;
 		bottom: 25px;
-		left: 50%;
-		margin-left: -210px;
+		left: 40%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
@@ -608,7 +605,7 @@ nav {
 	height: 330px;
 	margin: 0 auto;
 	position: relative;
-	top: 20%;
+	top: 15%;
 	background: #7e1617;
 }
 
@@ -625,8 +622,11 @@ nav {
 }
 
 #section2tab5 {	
-	background: url(../img/mae_west.jpg) no-repeat 100% 50% fixed;
-	background-size: 1598px 1111px;
+	background: url(../img/mae_west.jpg) no-repeat 40% 60% fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -645,16 +645,17 @@ nav {
 		background: #fff;
 		color: #7e1617;
 		bottom: 25px;
-		left: 50%;
-		margin-left: -225px;
+		left: 40%;
 		width: 450px;
-
 		padding: 10px 0 10px 0;
 	}
 
 #section3tab5 {
-	background: url(../img/mae_west.jpg) no-repeat -0% 50% fixed;
-	background-size: 1598px 1111px;
+	background: url(../img/mae_west.jpg) no-repeat 40% 40% fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -674,8 +675,7 @@ nav {
 		background: #fff;
 		color: #7e1617;
 		bottom: 25px;
-		left: 50%;
-		margin-left: -210px;
+		left: 40%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
