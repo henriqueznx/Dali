@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+
 	<title>Le Monde de Dalì</title>
 	<link href="public/css/reset.css" rel="stylesheet">
 	<link href="public/css/fonts.css" rel="stylesheet">
@@ -11,9 +12,10 @@
 
 <body>
 	<header>
-		<audio src="public/audio/Bakermat_MasQueNada.mp3" autoplay="1">Veuillez mettre à jour votre navigateur !</audio>
+		<audio autoplay="1" src="public/audio/Bakermat_MasQueNada.mp3">Veuillez mettre à jour votre navigateur !</audio>
 	</header>
-<!-- 	<div id="loader">
+	
+	<!--    <div id="loader">
 		
 		<img class="tete_dali" src="public/uploads/salvador.png" alt="">
 		<div id="background_left" class="load-left"></div>
@@ -23,91 +25,161 @@
 				<img id="stache-right" class="load-right stache-move" src="public/uploads/stachmou-right.png" alt=""/>
 		</div>
 	</div> -->
-
-
+	
+	
+		<!-- HOME -->
 	<div id="maincontent">
 		<section id="home">
 			<nav>
 				<ul class="flex">
 					<li>
-						<div id="frame1" class="cursor_frame">
-							<img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first" class="inactive">
+						<div class="cursor_frame" id="frame1">
+							<img alt="marche_esclaves_apparition_buste_Voltaire" class="inactive" id="first" src=
+							"public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg">
+
 							<div class="fade">
-								<p >Découvrir l'oeuvre</p>
+								<p>Découvrir l'oeuvre</p>
 							</div>
 						</div>
 					</li>
+
 					<li>
-						<div id="frame2" class="cursor_frame">
-							<img src="public/uploads/lion_cheval_dormeuse_invisibles.jpg" alt="lion_cheval_dormeuse_invisibles" id="two">
+						<div class="cursor_frame" id="frame2">
+							<img alt="lion_cheval_dormeuse_invisibles" id="two" src="public/uploads/lion_cheval_dormeuse_invisibles.jpg">
+
 							<div class="fade">
-								<p >Découvrir l'oeuvre</p>
+								<p>Découvrir l'oeuvre</p>
 							</div>
 						</div>
-						</li>
-					<li>
-						<a href="#">
-							<img src="public/uploads/apparition_visage_compotier_sur_plage.png" alt="apparition_visage_compotier_sur_plage" id="three">
-							<div class="fade">
-								<p >Découvrir l'oeuvre</p>
-							</div>
-						</a>
 					</li>
+
 					<li>
-						<a href="#">
-							<img src="public/uploads/image_disappears.jpg"  alt="image_disappears" id="four">
+						<div class="cursor_frame" id="frame3">
+							<img alt="apparition_visage_compotier_sur_plage" id="three" src=
+							"public/uploads/apparition_visage_compotier_sur_plage.png">
+
 							<div class="fade">
-								<p >Découvrir l'oeuvre</p>
+								<p>Découvrir l'oeuvre</p>
 							</div>
-						</a>
+						</div>
 					</li>
+
 					<li>
-						<a href="#">
-							<img src="public/uploads/mae_west.jpg" alt="mae_west" id="five">
+						<div class="cursor_frame" id="frame4">
+							<img alt="image_disappears" id="four" src="public/uploads/image_disappears.jpg">
+
 							<div class="fade">
-								<p >Découvrir l'oeuvre</p>
+								<p>Découvrir l'oeuvre</p>
 							</div>
-						</a>
+						</div>
+					</li>
+
+					<li>
+						<div class="cursor_frame" id="frame5">
+							<img alt="mae_west" id="five" src="public/uploads/mae_west.jpg">
+
+							<div class="fade">
+								<p>Découvrir l'oeuvre</p>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</nav>
+		</section>
+			
+			<!-- RELIER AU TABLEAU 1 DE LA HOME -->
+		<section id="frame-one">
+			<div class="bloc">
+				<h2>Marché d'esclaves avec apparition du buste invisible de Voltaire</h2>
+
+				<p>Voici « Marché aux esclaves avec apparition du buste invisible de Voltaire » datant de 1940. Ce tableau, outre son
+				illusion, est particulier du fait qu'il est politique. Dali mets en scène Voltaire pour s'exprimer sur les idées de ce
+				dernier. La femme de l'artiste, Gala, fait face au philosophe sur la toile.</p>
+			</div>
+			<button class="button-left" id="toHome">Préc.</button> 
+			<button class="button-right" id="toTab2">Suiv.</button>
+			<button class="button-down" id="Scroll">Scroll</button>
+		</section>
+
+
+			<!-- RELIER AU TABLEAU 2 DE LA HOME -->
+		<section id="frame-two">
+			<div class="bloc">
+				<h2>Lion, Cheval et Dormeuses Invisibles</h2>
+
+				<p>Voici « Lion, Cheval, Dormeuse invisible » datant de 1930. Ce tableau marque le début du concept de paranoïa-critique
+				basé sur les travaux sur l'inconscient de Freud. On trouve sur un même dessin de multiples images, une femme, une barque,
+				un cheval ou encore un lion. Le thème de l'oeuvre se base sur cette multiplicité et le doute qu'elle apporte.</p>
+			</div>
+			<button class="button-left" id="toTab1">Préc.</button> 
+			<button class="button-right" id="toTab3">Suiv.</button>
+			<button class="button-down" id="Scroll">Scroll</button>
+		</section>
 		
-	</section>
+		
+			<!-- RELIER AU TABLEAU 3 DE LA HOME -->
+		<section id="frame-three">
+			<div class="bloc">
+				<h2>Apparition d'un visage et d'un compotier sur une plage</h2>
 
-	<section id="frame-one">
-	<!-- RELIER AU TABLEAU 1 DE LA HOME -->
-	<!-- INSERT CODE HERE -->
-	<div class="bloc">
-		<h2>Marché d'esclaves avec apparition du buste invisible de Voltaire</h2>
-		<p>Voici « Marché aux esclaves avec apparition du buste invisible de Voltaire » datant de 1940. Ce tableau, outre son illusion, est particulier du fait qu'il est politique. Dali mets en scène Voltaire pour s'exprimer sur les idées de ce dernier. La femme de l'artiste, Gala, fait face au philosophe sur la toile.</p>
+				<p>Voici « Apparition d'un visage et d'un compotier sur une plage » datant de 1938. Ce tableau est un chef-d'oeuvre de
+				l'art de l'image multiple. Trois images composées de divers éléments apparaissent l"une dans l'autre. La peinture aborde un
+				thème plus doux qu'à l'accoutumé.</p>
+			</div>
+			<button class="button-left" id="toTab1">Préc.</button> 
+			<button class="button-right" id="toTab3">Suiv.</button>
+			<button class="button-down" id="Scroll">Scroll</button>
+		</section>
+		
+		
+			<!-- RELIER AU TABLEAU 4 DE LA HOME -->
+		<section id="frame-four">
+			<div class="bloc">
+				<h2>L’image disparaît</h2>
+
+				<p>Voici « L'image disparait » datant de 1938. Ce tableau retranscrit le contexte sombre de l'époque: au milieu de la
+				guerre civile, le général Franco allait prendre le pouvoir de l'Espagne l'année suivante. On trouve dans les mêmes traits,
+				une femme tenant une lettre dans ses mains, mais aussi un visage gigantesque! L'oeuvre aborde les thèmes récurrents chez
+				Dali de l'amour et de la femme en général.</p>
+			</div>
+			<button class="button-left" id="toTab1">Préc.</button> 
+			<button class="button-right" id="toTab3">Suiv.</button>
+			<button class="button-down" id="Scroll">Scroll</button>
+		</section>
+		
+		
+			<!-- RELIER AU TABLEAU 5 DE LA HOME -->
+		<section id="frame-five">
+			<div class="bloc">
+				<h2>Portrait de Mae West</h2>
+
+				<p>Voici « Marché aux esclaves avec apparition du buste invisible de Voltaire » datant de 1940. Ce tableau, outre son
+				illusion, est particulier du fait qu'il est politique. Dali mets en scène Voltaire pour s'exprimer sur les idées de ce
+				dernier. La femme de l'artiste, Gala, fait face au philosophe sur la toile.</p>
+			</div>
+			<button class="button-left" id="toTab1">Préc.</button> 
+			<button class="button-right" id="toTab3">Suiv.</button>
+			<button class="button-down" id="Scroll">Scroll</button>
+		</section>
+		
+			
+			<!-- FOOTER -->
+		<footer>
+			<div id="description">
+				<h2>Né à Figueras le 11/05/1904 - Mort à Figueras le 23/01/1989</h2>
+
+				<p>Après avoir étudié les beaux-arts à Madrid, Salvador Dalí s'intéresse très vite au mouvement surréaliste. Il lui donne
+				une forme graphique totalement originale, fruit de son imagination débordante et influencée par la psychanalyse
+				(Persistance de la mémoire, 1931 ; Construction molle avec des haricots bouillis : Prémonition de la guerre, 1936). Ses
+				thèmes de prédilection sont la mort, l'érotisme, la putréfaction... mis en scène avec une parfaite maîtrise technique et un
+				goût pour les images en trompe l'oeil.</p>
+			</div>
+			<button class="slide">SLIDE</button>
+		</footer>
 	</div>
-	<button id="toHome" class="button-left">Préc.</button>
-	<button id="toTab2" class="button-right">Suiv.</button>
-	<button id="Scroll" class="button-down">Scroll down</button>
-	</section>
-
-	<section id="frame-two">
-	<!-- RELIER AU TABLEAU 2 DE LA HOME -->
-	<div class="bloc">
-		<h2>Lion, Cheval et Dormeuses Invisibles</h2>
-		<p>Voici « Lion, Cheval, Dormeuse invisible » datant de 1930. Ce tableau marque le début du concept de paranoïa-critique basé sur les travaux sur l'inconscient de Freud. On trouve sur un même dessin de multiples images, une femme, une barque, un cheval ou encore un lion. Le thème de l'oeuvre se base sur cette multiplicité et le doute qu'elle apporte.</p>
-	</div>
-	<button id="toTab1" class="button-left">Préc.</button>
-	<button id="toTab3" class="button-right">Suiv.</button>
-	<button id="Scroll" class="button-down">Scroll down</button>
-	</section>
-
-			<footer>
-				<div id="description">
-					<h2>Né à Figueras le 11/05/1904 - Mort à Figueras le 23/01/1989</h2>
-
-					<p>Après avoir étudié les beaux-arts à Madrid, Salvador Dalí s'intéresse très vite au mouvement surréaliste. Il lui donne une forme graphique totalement originale, fruit de son imagination débordante et influencée par la psychanalyse (Persistance de la mémoire, 1931 ; Construction molle avec des haricots bouillis : Prémonition de la guerre, 1936). Ses thèmes de prédilection sont la mort, l'érotisme, la putréfaction... mis en scène avec une parfaite maîtrise technique et un goût pour les images en trompe l'oeil.</p>
-				</div>
-				<button class="slide">SLIDE</button>
-			</footer>
-	</div> <!-- FIN #MAINCONTENT (PLACER A LA FIN DU HTML) -->
-<script src="public/js/libraries/jquery.min.js"></script>
-<script src="public/js/libraries/TweenMax.min.js"></script>
-<script src="public/js/main.js"></script>
+	
+	<script src="public/js/libraries/jquery.min.js"></script>
+	<script src="public/js/libraries/TweenMax.min.js"></script> 
+	<script src="public/js/main.js"></script>
 </body>
 </html>
