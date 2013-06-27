@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'sakkal_majallaregular';
+    src: url('../fonts/majalla.eot');
+    src: url('../fonts/majalla.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/majalla.woff') format('woff'),
+         url('../fonts/majalla.ttf') format('truetype'),
+         url('../fonts/majalla.svg#sakkal_majallaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sakkal_majallabold';
+    src: url('../fonts/majallabold.eot');
+    src: url('../fonts/majallabold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/majallabold.woff') format('woff'),
+         url('../fonts/majallabold.ttf') format('truetype'),
+         url('../fonts/majallabold.svg#sakkal_majallabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'marcellus_scregular';
+    src: url('../fonts/marcellus-regular.eot');
+    src: url('../fonts/marcellus-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/marcellus-regular.woff') format('woff'),
+         url('../fonts/marcellus-regular.ttf') format('truetype'),
+         url('../fonts/marcellus-regular.svg#marcellus_scregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GoudyStdExtraBold';
+    src: url('goudystd-extrabold.eot');
+    src: url('goudystd-extrabold.eot') format('embedded-opentype'),
+         url('goudystd-extrabold.woff') format('woff'),
+         url('goudystd-extrabold.ttf') format('truetype'),
+         url('goudystd-extrabold.svg#GoudyStdExtraBold') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
