@@ -180,7 +180,6 @@ nav {
 }
 
 .fade p {
-	width: 132px;
 	font: 22px sakkal_majallabold, Arial, sans-serif;
 	color: #f4e4d0;
 	text-align: center;
@@ -192,6 +191,26 @@ nav {
 		-ms-transition: all .2s linear;
 		 -o-transition: all .2s linear;
 			transition: all .2s linear;
+}
+#p1
+{
+	width: 144px;
+}
+#p2
+{
+	width: 144px;
+}
+#p3
+{
+	width: 124px;
+}
+#p4
+{
+	width: 105px;
+}
+#p5
+{
+	width: 61px;
 }
 
 .fade p:hover {
@@ -390,7 +409,7 @@ nav {
 
 #frame-one .bloc {
 	width: 450px;
-	height: 330px;
+	height: 350px;
 	margin: 0 auto;
 	position: relative;
 	top: 20%;
