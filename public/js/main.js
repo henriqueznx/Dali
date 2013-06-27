@@ -85,6 +85,9 @@ $(document).ready(function(){
 			$(".slide").animate({
 					marginBottom:"0"
 			},"slow");
+			$("#description").animate({
+					marginBottom:"0"
+			},"fast")
 		}
 
 		$('#description').slideToggle('slow');
