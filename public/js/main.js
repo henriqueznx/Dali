@@ -145,15 +145,17 @@ $('#frame-one').hide();
 		// console.log("lol");
 		TweenLite.set('#home');
 		TweenMax.to('#home', 1, 
-			{'margin-left': '-100%', ease: Power1.easeIn,
+			{'margin-top': '-100%', ease: Power1.easeIn,
  				onComplete: function(e){$("#home").hide(),
- 							$('#frame-one').show();
- 							TweenLite.fromTo('#frame-one', 1, 
-								{'margin-left': '130%', ease: Power4.easeInOut},
-								{'margin-left': '0%', ease: Power4.easeInOut}
-							)}
+ 							$('#frame-one').show()
+ 				}
  			}
  		);
+
+ 		TweenLite.fromTo('#frame-one', 1.5, 
+								{'margin-top': '90%', ease: Power1.easeIn},
+								{'margin-top': '0%', ease: Power1.easeIn}
+		);
 
 	});
 
@@ -210,5 +212,9 @@ $('#frame-two').hide();
 
 	});
 // FRAME 2 - FIN
+
+$('#frame-three').hide();
+$('#frame-four').hide();
+$('#frame-five').hide();
 
 });
