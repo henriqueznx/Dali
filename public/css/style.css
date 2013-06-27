@@ -301,8 +301,8 @@ footer a {
 	/* BUTTON */
         
 	.button-left {
-		height: 29px;
-		width: 19px;
+		height: 50px;
+		width: 35px;
 		margin: 0;
         padding: 0;
         border: 0;
@@ -315,13 +315,18 @@ footer a {
 		transform: rotate(180deg);
 		cursor: pointer;
 		position: absolute;
-		left: 1%;
+		left: 0%;
 		top: 50%;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+    	-ms-transition: all 0.2s ease;
+    	-o-transition: all 0.2s ease;
+		transition: all 0.2s ease; 
 	}
 	 
 	.button-right {
-		height: 29px;
-		width: 19px;
+		height: 50px;
+		width: 35px;
 		margin: 0;
         padding: 0;
         border: 0;
@@ -329,14 +334,19 @@ footer a {
 		background: url(../img/arrow_right.png) no-repeat center center transparent;
 		cursor: pointer;
 		position: absolute;
-		right: 1%;
+		right: 0%;
 		top: 50%;
+		-webkit-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+    	-ms-transition: all 0.2s ease;
+    	-o-transition: all 0.2s ease;
+		transition: all 0.2s ease; 
 	}
 	
 	.button-down {
 		position: absolute;
 		height: 30px;
-		width: 150px;
+		width: 100px;
 		border: 1px solid #fff;
 		text-align: center;
 		text-transform: uppercase;
@@ -348,8 +358,15 @@ footer a {
         padding: 0;
         cursor: pointer;
         top: 80%;
-        left: 44%;
+        left: 46%;
 	}
+	
+#toHome:hover, #toTab2:hover {
+	background: url(../img/arrow_right.png) no-repeat center center #4a6a39;
+	height: 50px;
+	width: 35px;
+}
+
 
 /* DIV ENTOURANT LE CODE DE LA DESCRIPTION DU TABLEAU 1*/
 
