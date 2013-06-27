@@ -121,7 +121,6 @@ $(document).ready(function(){
 $('#frame-one').hide();
 	$('#frame1').click(function(e){
 		console.log("lol");
-		// $('#frame-one').show();
 		TweenLite.set('#home');
 		TweenMax.to('#home', 1, 
 			{'margin-left': '-100%', ease: Power1.easeIn,
@@ -135,9 +134,43 @@ $('#frame-one').hide();
  		);
 
 	});
+
+
+$('#toHome').click(function(e){
+		console.log("lolHome");
+		TweenLite.set('#home');
+		TweenLite.to('#frame-one', 1, 
+			{'margin-left': '100%', ease: Power3.easeIn,
+ 				onComplete: function(e){$("#frame-one").hide(),
+ 							$('#home').show();
+ 							TweenLite.fromTo('#home', 1, 
+								{'margin-left': '-100%', ease: Power4.easeInOut},
+								{'margin-left': '0%', ease: Power4.easeInOut}
+							)}
+ 			}
+ 		);
+
+	});
+
+
+$('#toTab2').click(function(e){
+		console.log("lolTab2");
+		TweenLite.to('#frame-one', 1, 
+			{'margin-right': '100%', ease: Power3.easeIn,
+ 				onComplete: function(e){$("#frame-one").hide(),
+ 							$('#frame-two').show();
+ 							TweenLite.fromTo('#frame-two', 1, 
+								{'margin-left': '100%', ease: Power4.easeInOut},
+								{'margin-left': '0%', ease: Power4.easeInOut}
+							)}
+ 			}
+ 		);
+
+	});
+
 // FRAME 1 - FIN
 
-// FRAME 1
+// FRAME 2
 $('#frame-two').hide();
 	$('#frame2').click(function(e){
 		console.log("lol2");
@@ -155,6 +188,6 @@ $('#frame-two').hide();
  		);
 
 	});
-// FRAME 1 - FIN
+// FRAME 2 - FIN
 
 });
