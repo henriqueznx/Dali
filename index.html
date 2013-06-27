@@ -3,120 +3,87 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-
-	<title>Web document</title>
+	<title>Le Monde de Dalì</title>
 	<link href="public/css/reset.css" rel="stylesheet">
 	<link href="public/css/fonts.css" rel="stylesheet">
 	<link href="public/css/style.css" rel="stylesheet">
-	<script src="public/js/open.js"></script>
-	<script src="public/js/jquery.min.js"></script>
 </head>
 
 <body>
-	<section>
-		<nav>
-			<ul class="flex">
-				<li>
-					<a href="#">
-						<img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first">
-						<div class="fade">
-							<p >Découvrir l'oeuvre</p>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="public/uploads/lion_cheval_dormeuse_invisibles.jpg" alt="lion_cheval_dormeuse_invisibles" id="two">
-						<div class="fade">
-							<p >Découvrir l'oeuvre</p>
-						</div>
-					</a>
-					</li>
-				<li>
-					<a href="#">
-						<img src="public/uploads/apparition_visage_compotier_sur_plage.png" alt="apparition_visage_compotier_sur_plage" id="three">
-						<div class="fade">
-							<p >Découvrir l'oeuvre</p>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="public/uploads/image_disappears.jpg"  alt="image_disappears" id="four">
-						<div class="fade">
-							<p >Découvrir l'oeuvre</p>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="public/uploads/mae_west.jpg" alt="mae_west" id="five">
-						<div class="fade">
-							<p >Découvrir l'oeuvre</p>
-						</div>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</section>
-	
-		<footer>
-			<section id="description">
-				<h2>Né à Figueras le 11/05/1904 - Mort à Figueras le 23/01/1989</h2>
-
-				<p>Après avoir étudié les beaux-arts à Madrid, Salvador Dalí s'intéresse très vite au mouvement surréaliste. Il lui donne une forme graphique totalement originale, fruit de son imagination débordante et influencée par la psychanalyse (Persistance de la mémoire, 1931 ; Construction molle avec des haricots bouillis : Prémonition de la guerre, 1936). Ses thèmes de prédilection sont la mort, l'érotisme, la putréfaction... mis en scène avec une parfaite maîtrise technique et un goût pour les images en trompe l'oeil.</p>
-			</section>
-			<button class="slide">SLIDE</button>
-			</footer>
-
-<script>
-$(document).ready(function() {
-
-	/* SLIDE  */
-	
-	var expand = false;
-	$(".slide").on("click", function(){
-		if(($('#description').css("display")) == "none") {
-			$(".slide").animate({
-					marginBottom:"240"
-			},"fast");
-		} else if (($('#description').css("display")) == "block") {
-			$(".slide").animate({
-					marginBottom:"0"
-			},"fast");
-		}
-
-		$('#description').slideToggle('fast');
+	<div id="loader">
 		
-	});
+		<img class="tete_dali" src="public/uploads/salvador.png" alt="">
+		<div id="background_left" class="load-left"></div>
+		<div id="background_right" class="load-right"></div>
+		<div id="container">
+				<img id="stache-left" class="load-left stache-move" src="public/uploads/stachmou-left.png" alt=""/>
+				<img id="stache-right" class="load-right stache-move" src="public/uploads/stachmou-right.png" alt=""/>
+		</div>
+	</div>
 
-	/* FULLSCREEN  */
-	 
-	$('.flex li').css('height', $(window).height());
-	$('body').css('height', $(window).height());
-	
-	/* HOVER  */
 
-	$('.flex li').bind('mouseenter', function(el){
-		$('.flex li').css('width', '17.5%');
-		$(this).css('width', '30%');
-	});
-	$('.flex li').bind('mouseleave', function(el){
-		$('.flex li').css('width', '20%');
-	});
-	
-	// $('.flex li img').bind('mouseenter', function(el){
-	// 	$(this).fadeTo(100, 0.5);
-	// 	$('.fade').fadeto(50, 1);		
-	// });
+	<div id="maincontent">
 
-	// $('.flex li img').bind('mouseleave', function(el){
-	// 	$(this).fadeTo(100, 1);
-	// 	$('.fade').fadeTo(50, 0.5); 
-	// });
 
-	
-	});
-</script>
+		<section id="home">
+			<nav>
+				<ul class="flex">
+					<li>
+						<a href="#">
+							<img src="public/uploads/marche_esclaves_apparition_buste_Voltaire.jpg" alt="marche_esclaves_apparition_buste_Voltaire" id="first">
+							<div class="fade">
+								<p >Découvrir l'oeuvre</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="public/uploads/lion_cheval_dormeuse_invisibles.jpg" alt="lion_cheval_dormeuse_invisibles" id="two">
+							<div class="fade">
+								<p >Découvrir l'oeuvre</p>
+							</div>
+						</a>
+						</li>
+					<li>
+						<a href="#">
+							<img src="public/uploads/apparition_visage_compotier_sur_plage.png" alt="apparition_visage_compotier_sur_plage" id="three">
+							<div class="fade">
+								<p >Découvrir l'oeuvre</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="public/uploads/image_disappears.jpg"  alt="image_disappears" id="four">
+							<div class="fade">
+								<p >Découvrir l'oeuvre</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="public/uploads/mae_west.jpg" alt="mae_west" id="five">
+							<div class="fade">
+								<p >Découvrir l'oeuvre</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		
+			<footer>
+				<section id="description">
+					<h2>Né à Figueras le 11/05/1904 - Mort à Figueras le 23/01/1989</h2>
+
+					<p>Après avoir étudié les beaux-arts à Madrid, Salvador Dalí s'intéresse très vite au mouvement surréaliste. Il lui donne une forme graphique totalement originale, fruit de son imagination débordante et influencée par la psychanalyse (Persistance de la mémoire, 1931 ; Construction molle avec des haricots bouillis : Prémonition de la guerre, 1936). Ses thèmes de prédilection sont la mort, l'érotisme, la putréfaction... mis en scène avec une parfaite maîtrise technique et un goût pour les images en trompe l'oeil.</p>
+				</section>
+				<button class="slide">SLIDE</button>
+				</footer>
+
+	</div> <!-- FIN #MAINCONTENT (PLACER A LA FIN DU HTML) -->
+<script src="public/js/libraries/jquery.min.js"></script>
+<script src="public/js/libraries/TweenMax.min.js"></script>
+<script src="public/js/main.js"></script>
 </body>
 </html>

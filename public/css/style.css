@@ -1,3 +1,88 @@
+/* LOADER */
+body {
+	/*background: #fff;*/
+	/*overflow: hidden;*/
+}
+
+#maincontent {
+	/*display: none;*/
+}
+
+#loader {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 9999;
+}
+
+
+#background_left, #background_right {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	background: #f9f0e4;
+	/*background: red;*/
+	opacity: 0;
+	overflow: hidden;
+	-webkit-transition: all .5s linear;
+       -moz-transition: all .5s linear;
+    	-ms-transition: all .5s linear;
+    	 -o-transition: all .5s linear;
+    		transition: all .5s linear; 
+}
+
+	#background_left {
+		left: 0%;
+	}
+
+	#background_right {
+		right: 0%;
+	}
+
+.tete_dali {
+	position: absolute;
+	left: 50%;
+	bottom: 50%; 
+	display: none;
+	margin-left: -200px;
+	bottom: 0%;
+
+}
+
+#stache-left {
+	left: 50%;
+	margin-left: -260px; 
+	-webkit-transition: all .5s linear;
+       -moz-transition: all .5s linear;
+    	-ms-transition: all .5s linear;
+    	 -o-transition: all .5s linear;
+    		transition: all .5s linear; 
+    position: absolute;
+}
+
+
+#stache-right {
+	right: 50%;
+	margin-right: -260px; 
+	-webkit-transition: all .5s linear;
+       -moz-transition: all .5s linear;
+    	-ms-transition: all .5s linear;
+    	 -o-transition: all .5s linear;
+    		transition: all .5s linear;
+    position: absolute;
+}
+
+
+#container {
+	position: absolute;
+	width: 100%;
+	height: 446px;
+	bottom: 0%;
+	margin: 0 auto;
+} 
+/* LOADER - FIN*/
+
+
 		/* GENERAL */
 		
 		
@@ -70,7 +155,7 @@ nav{
 	margin-top: -160px;
 }
 
-/* HOVER - HOME*/
+/*_____HOVER - HOME_____*/
 .fade {
 	position: absolute;
 	top: 0%;
@@ -109,7 +194,7 @@ nav{
 	opacity: 1;
 }
 
-/* HOVER - HOME - FIN*/
+/*_____HOVER - HOME - FIN_____*/
 
 
 		/* SLIDE */
