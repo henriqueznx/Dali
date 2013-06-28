@@ -311,7 +311,7 @@ nav {
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
-	top: 80%;
+	top: 84%;
 	left: 46%;
 }
 
@@ -351,8 +351,14 @@ nav {
 .btn5:hover {
 	background-color: #7e1617;
 }
+<<<<<<< HEAD
 
 
+=======
+.theme {
+	text-decoration: underline;
+}
+>>>>>>> 6c5e1dbff8859cf8ff335717b7692d7ac7f1c88f
 /* CSS FRAME 1 */
 #frame-one .bloc {
 	width: 450px;
@@ -387,7 +393,7 @@ nav {
 		width: 250px;
 		background: #4a6a39;
 		padding: 25px 30px;
-		margin-left: 130px;  
+		margin-left: 90px;  
 	}
 
 #section3tab1 {
@@ -398,7 +404,7 @@ nav {
 	height: 100%;
 }
 #section3tab1 p.text {
-	width: 238px;
+	width: 250px;
 	height: 268px;
 	overflow:scroll;
 	background: #4a6a39;
@@ -411,7 +417,7 @@ nav {
 		background: #fff;
 		color: #4a6a39;
 		bottom: 25px;
-		left: 40%;
+		left: 33%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
@@ -451,7 +457,7 @@ nav {
 }
 
 #section2tab2 {	
-	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat 80% 50% fixed;
+	background: url(../img/lion_cheval_dormeuse_invisibles_COVER.jpg) no-repeat center center fixed;
 	background-size: 1598px 1111px;
 	position: relative;
 	width: 100%;
@@ -467,15 +473,15 @@ nav {
 
 #section2tab2 .text {
 	overflow:scroll;
-	height: 200px;
+	height: 300px;
 }
 
 	#section2tab2 p.citation {
 		position: absolute;
 		background: #fff;
-		color: #4a6a39;
+		color: #59403c;
 		bottom: 25px;
-		left: 35%;
+		left: 24%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
@@ -516,7 +522,7 @@ nav {
 		width: 250px;
 		background: #758f84;
 		padding: 25px 30px;
-		margin-left: 130px;  
+		margin-left: 90px;  
 	}
 
 #section3tab3 {
@@ -528,8 +534,8 @@ nav {
 }
 
 #section3tab3 p.text {
-	width: 238px;
-	height: 268px;
+	width: 250px;
+	height: 300px;
 	overflow:scroll;
 	background: #758f84;
 	padding: 25px 30px;
@@ -541,7 +547,7 @@ nav {
 		background: #fff;
 		color: #758f84;
 		bottom: 25px;
-		left: 40%;
+		left: 34%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
@@ -570,8 +576,12 @@ nav {
 }
 
 #section2tab4 {	
-	background: url(../img/image_disappears.jpg) no-repeat 35% 50% fixed;
-	background-size: 1598px 1111px;
+	background: url(../img/image_disappears.jpg) no-repeat center center fixed;
+	/*background: red;*/
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -581,20 +591,31 @@ nav {
 		width: 250px;
 		background: #c8ab93;
 		padding: 25px 30px;
-		margin-left: 130px;  
+		margin-left: 90px;  
 	}
 
-#section2tab4 .text {
-	overflow:scroll;
-	height: 200px;
+#section3tab4 {	
+	background: url(../img/image_disappears.jpg) no-repeat 103% 92% fixed;
+	background-size: 1598px 1111px;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
+	#section3tab4 .text {
+		overflow:scroll;
+		height: 300px;
+		width: 250px;
+		background: #c8ab93;
+		padding: 25px 30px;
+		margin-left: 90px; 
+	} 
 
-	#section2tab4 p.citation {
+	#section3tab4 p.citation {
 		position: absolute;
 		background: #fff;
 		color: #c8ab93;
 		bottom: 25px;
-		left: 40%;
+		left: 33%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
@@ -635,20 +656,10 @@ nav {
 
 	#section2tab5 p.text {
 		width: 250px;
-		height: 250px;
+		height: 146px;
 		background: #7e1617;
-		overflow: scroll;
 		padding: 25px 30px;
-		margin-left: 130px;  
-	}
-	#section2tab5 p.citation {
-		position: absolute;
-		background: #fff;
-		color: #7e1617;
-		bottom: 25px;
-		left: 40%;
-		width: 450px;
-		padding: 10px 0 10px 0;
+		margin-left: 90px;  
 	}
 
 #section3tab5 {
@@ -663,8 +674,8 @@ nav {
 }
 
 #section3tab5 p.text {
-	width: 238px;
-	height: 268px;
+	width: 250px;
+	height: 300px;
 	overflow:scroll;
 	background: #7e1617;
 	padding: 25px 30px;
@@ -676,7 +687,7 @@ nav {
 		background: #fff;
 		color: #7e1617;
 		bottom: 25px;
-		left: 40%;
+		left: 34%;
 		width: 420px;
 		padding: 10px 0 10px 0;
 	}
