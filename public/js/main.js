@@ -148,19 +148,20 @@ $('#frame-five').hide();
 $('.toHome').click(function(e){
 // $('#frame-one').hide();
 		// TweenLite.set('#home');
+	// $('#home').css('margin-bottom', '100%');
 		console.log('returnHome');
 		TweenMax.to('#frame-one, #frame-two, #frame-three, #frame-four, #frame-five', 1, 
 			{'margin-top': '100%', ease: Power1.easeIn,
  				onComplete: function(e){$("#frame-one, #frame-two, #frame-three, #frame-four, #frame-five").hide(),
  							$('#home').show()
+ 	
  				}
  			}
  		)
-
  		TweenLite.fromTo('#home', 1.5, 
 								{'margin-top': '-100%', ease: Power1.easeIn},
 								{'margin-top': '0%', ease: Power1.easeIn}
-		)
+		);
 
 	});
 
