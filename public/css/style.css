@@ -704,7 +704,7 @@ footer h2 {
 }
 
 footer p {
-	text-align: justify;
+	text-align: center;
 	font: 18px sakkal_majallabold, Arial, sans-serif;
 	color: #353535;
 	padding-bottom: 30px;
@@ -714,6 +714,20 @@ footer p {
 
 footer a {
 	color: red;
+	text-align: center;
+}
+
+footer img {
+	
+}
+
+#bio {
+	width: 460px;
+	position: absolute;
+	left: 5%;
+	top: 24%;
+}
+#cita {
 	text-align: center;
 }
 
