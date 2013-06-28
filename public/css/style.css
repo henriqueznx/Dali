@@ -352,6 +352,7 @@ nav {
 	background-color: #7e1617;
 }
 
+
 /* CSS FRAME 1 */
 #frame-one .bloc {
 	width: 450px;
@@ -685,6 +686,7 @@ nav {
 
 footer {
 	clear: both;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100%;
