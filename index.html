@@ -8,9 +8,11 @@
 	<link href="public/css/reset.css" rel="stylesheet">
 	<link href="public/css/fonts.css" rel="stylesheet">
 	<link href="public/css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="public/js/map.js"></script>
 </head>
 
-<body>
+<body onload="initialiser()">
 	<header>
 		<audio id="background_audio" autoplay="autoplay">
 			<source src="http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a" />
@@ -233,6 +235,7 @@ Au niveau du cou, des marches se transforment en coliers précieux, la bouche ra
 				(Persistance de la mémoire, 1931 ; Construction molle avec des haricots bouillis : Prémonition de la guerre, 1936). Ses
 				thèmes de prédilection sont la mort, l'érotisme, la putréfaction... mis en scène avec une parfaite maîtrise technique et un
 				goût pour les images en trompe l'oeil.</p>
+				<div id="carte" style="height: 220px; width: 240px;"></div>
 			</div>
 			<button class="slide">SLIDE</button>
 		</footer>
