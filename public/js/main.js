@@ -144,302 +144,116 @@ $('#frame-four').hide();
 $('#frame-five').hide();
 
 
-// RETOUR HOME
-$('.toHome').click(function(e){
-// $('#frame-one').hide();
-		// TweenLite.set('#home');
-		console.log('returnHome');
-		TweenMax.to('#frame-one, #frame-two, #frame-three, #frame-four, #frame-five', 1, 
-			{'margin-top': '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-one, #frame-two, #frame-three, #frame-four, #frame-five").hide(),
- 							$('#home').show()
- 				}
- 			}
- 		)
 
- 		TweenLite.fromTo('#home', 1.5, 
-								{'margin-top': '-100%', ease: Power1.easeIn},
-								{'margin-top': '0%', ease: Power1.easeIn}
-		)
+					/* HOME TO */
+/* FRAME 1 */
 
-	});
+$("#frame1").click(function() {
+ $("#home").hide("slow");
+  $("#frame-one").slideToggle("slow");
+});
 
-// FRAME 1
-$('#frame1').click(function(e){
-// $('#frame-one').hide();
-		// console.log("lol");
-		TweenLite.set('#home');
-		TweenMax.to('#home', 1, 
-			{'margin-top': '-100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#home").hide(),
- 							$('#frame-one').show()
- 				}
- 			}
- 		)
+/* FRAME 2 */
 
- 		TweenLite.fromTo('#frame-one', 1.5, 
-								{'margin-top': '90%', ease: Power1.easeIn},
-								{'margin-top': '0%', ease: Power1.easeIn}
-		)
+$("#frame2").click(function() {
+ $("#home").hide("slow");
+  $("#frame-two").slideToggle("slow");
+});
 
-	});
+/* FRAME 3 */
 
-// POUR REVENIR AU TABLEAU PRECEDENT 5
-$('#toTab5from1').click(function(e){
-// $('#frame-five').hide();
-		TweenLite.to('#frame-one', 1, 
-			{left: '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-one").hide()
- 				}
- 			}
- 		);
-$('#frame-five').show()
- 		TweenLite.fromTo('#frame-five', 1.5,
-			{left: '-110%', ease: Power1.easeIn},
-			{left: '0%', ease: Power1.easeIn}
-		);
+$("#frame3").click(function() {
+ $("#home").hide("slow");
+  $("#frame-three").slideToggle("slow");
+});
+
+/* FRAME 4 */
+
+$("#frame4").click(function() {
+ $("#home").hide("slow");
+  $("#frame-four").slideToggle("slow");
+});
+
+/* FRAME 5 */
+
+$("#frame5").click(function() {
+ $("#home").hide("slow");
+  $("#frame-five").slideToggle("slow");
 });
 
 
-// POUR PASSER AU TABLEAU SUIVANT
-$('#toTab2').click(function(e){
-		TweenLite.to('#frame-one', 1, 
-			{'margin-right': '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-one").hide()
- 				}
- 			}
- 		)
- $('#frame-two').show();
- 		TweenLite.fromTo('#frame-two', 1.5, 
-				{'margin-left': '100%', ease: Power1.easeIn},
-				{'margin-left': '0%', ease: Power1.easeIn}
-		)
+					/* PREC SUIV */
 
-	});
-// FRAME 1 - FIN
+/* FRAME 1 */
 
-
-// FRAME 2
-$('#frame2').click(function(e){
-// $('#frame-two').hide();
-		// console.log("lol");
-		TweenLite.set('#home');
-		TweenMax.to('#home', 1, 
-			{'margin-top': '-100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#home").hide(),
- 							$('#frame-two').show()
- 				}
- 			}
- 		)
-
- 		TweenLite.fromTo('#frame-two', 1.3, 
-								{'margin-top': '90%', ease: Power1.easeIn},
-								{'margin-top': '0%', ease: Power1.easeIn}
-		)
-
-	});
-
-// POUR REVENIR AU TABLEAU PRECEDENT 1
-$('#toTab1').click(function(e){
-// $('#frame-one').hide();
-		TweenLite.to('#frame-two', 1, 
-			{left: '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-two").hide()
- 				}
- 			}
- 		);
-
-$('#frame-one').show();
- 		TweenLite.fromTo('#frame-one', 1.5,
-			{left: '-110%', ease: Power1.easeIn},
-			{left: '0%', ease: Power1.easeIn}
-		);
+$("#toTab5from1").click(function() {
+ $("#frame-one").hide("slow");
+  $("#frame-five").slideToggle("slow");
 });
 
-// POUR PASSER AU TABLEAU SUIVANT
-$('#toTab3').click(function(e){
-$('#frame-three').hide();
-		// console.log("lolTab2");
-		TweenLite.to('#frame-two', 1, 
-			{'margin-right': '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-two").hide()
- 				}
- 			}
- 		)
- $('#frame-three').show();
- 		TweenLite.fromTo('#frame-three', 1.5, 
-				{'margin-left': '100%', ease: Power1.easeIn},
-				{'margin-left': '0%', ease: Power1.easeIn}
-		)
-
-	});
-// FRAME 2 - FIN
-
-// FRAME 3
-$('#frame3').click(function(e){
-$('#frame-three').hide();
-		// console.log("lol");
-		TweenLite.set('#home');
-		TweenMax.to('#home', 1, 
-			{'margin-top': '-100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#home").hide(),
- 							$('#frame-three').show()
- 				}
- 			}
- 		)
-
- 		TweenLite.fromTo('#frame-three', 1.3, 
-								{'margin-top': '90%', ease: Power1.easeIn},
-								{'margin-top': '0%', ease: Power1.easeIn}
-		)
-
-	});
-
-// POUR REVENIR AU TABLEAU PRECEDENT 2
-$('#toTab2from3').click(function(e){
-// $('#frame-two').hide();
-		TweenLite.to('#frame-three', 1, 
-			{left: '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-three").hide()
- 				}
- 			}
- 		);
-
-$('#frame-two').show();
- 		TweenLite.fromTo('#frame-two', 1.5,
-			{left: '-110%', ease: Power1.easeIn},
-			{left: '0%', ease: Power1.easeIn}
-		);
+$("#toTab2").click(function() {
+ $("#frame-one").hide("slow");
+  $("#frame-two").slideToggle("slow");
 });
 
-// POUR PASSER AU TABLEAU SUIVANT
-$('#toTab4').click(function(e){
-$('#frame-four').hide();
-		// console.log("lolTab2");
-		TweenLite.to('#frame-three', 1, 
-			{'margin-right': '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-three").hide()
- 				}
- 			}
- 		)
+/* FRAME 2 */
 
- $('#frame-four').show();
- 		TweenLite.fromTo('#frame-four', 1.5, 
-				{'margin-left': '100%', ease: Power1.easeIn},
-				{'margin-left': '0%', ease: Power1.easeIn}
-		)
-
-	});
-// FRAME 3 - FIN
-
-// FRAME 4
-$('#frame4').click(function(e){
-// $('#frame-four').hide();
-		TweenLite.set('#home');
-		TweenMax.to('#home', 1, 
-			{'margin-top': '-100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#home").hide(),
- 							$('#frame-four').show()
- 				}
- 			}
- 		)
-
- 		TweenLite.fromTo('#frame-four', 1.3, 
-								{'margin-top': '90%', ease: Power1.easeIn},
-								{'margin-top': '0%', ease: Power1.easeIn}
-		)
-
-	});
-
-// POUR REVENIR AU TABLEAU PRECEDENT 3
-$('#toTab3from4').click(function(e){
-// $('#frame-three').hide();
-		TweenLite.to('#frame-four', 1, 
-			{left: '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-four").hide()
- 				}
- 			}
- 		);
-
-$('#frame-three').show();
- 		TweenLite.fromTo('#frame-three', 1.5,
-			{left: '-110%', ease: Power1.easeIn},
-			{left: '0%', ease: Power1.easeIn}
-		);
+$("#toTab1").click(function() {
+ $("#frame-two").hide("slow");
+  $("#frame-one").slideToggle("slow");
 });
 
-// POUR PASSER AU TABLEAU SUIVANT
-$('#toTab5').click(function(e){
-// $('#frame-five').hide();
-	console.log('toTab5');
-		TweenLite.to('#frame-four', 1, 
-			{'margin-right': '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-four").hide()
- 				}
- 			}
- 		);
- $('#frame-five').show();
- 		TweenLite.fromTo('#frame-five', 1.5, 
-				{'margin-left': '100%', ease: Power1.easeIn},
-				{'margin-left': '0%', ease: Power1.easeIn}
-		);
-
-	});
-// FRAME 4 - FIN
-
-// FRAME 5
-	$('#frame5').click(function(e){
-// $('#frame-five').hide();
-		TweenLite.set('#home');
-		TweenMax.to('#home', 1, 
-			{'margin-top': '-100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#home").hide(),
- 							$('#frame-five').show()
- 				}
- 			}
- 		)
-
- 		TweenLite.fromTo('#frame-five', 1.3, 
-								{'margin-top': '90%', ease: Power1.easeIn},
-								{'margin-top': '0%', ease: Power1.easeIn}
-		)
-
-	});
-
-// POUR REVENIR AU TABLEAU PRECEDENT 4
-$('#toTab4from5').click(function(e){
-	// $('#frame-four').hide();
-		TweenLite.to('#frame-five', 1, 
-			{left: '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-five").hide()
- 				}
- 			}
- 		);
-
-$('#frame-four').show();
- 		TweenLite.fromTo('#frame-four', 1.5,
-			{left: '-110%', ease: Power1.easeIn},
-			{left: '0%', ease: Power1.easeIn}
-		);
+$("#toTab3").click(function() {
+ $("#frame-two").hide("slow");
+  $("#frame-three").slideToggle("slow");
 });
 
-// POUR PASSER AU TABLEAU SUIVANT
-$('#toTab1from5').click(function(e){
-	// $('#frame-one').hide();
-		TweenLite.to('#frame-five', 1, 
-			{'margin-right': '100%', ease: Power1.easeIn,
- 				onComplete: function(e){$("#frame-five").hide()
- 				}
- 			}
- 		);
- $('#frame-one').show();
- 		TweenLite.fromTo('#frame-one', 1.5, 
-				{'margin-left': '100%', ease: Power1.easeIn},
-				{'margin-left': '0%', ease: Power1.easeIn}
-		);
+/* FRAME 3 */
 
-	});
-// FRAME 5 - FIN
+$("#toTab2from3").click(function() {
+ $("#frame-three").hide("slow");
+  $("#frame-two").slideToggle("slow");
+});
+
+$("#toTab4").click(function() {
+ $("#frame-three").hide("slow");
+  $("#frame-four").slideToggle("slow");
+});
+
+/* FRAME 4 */
+
+$("#toTab3from4").click(function() {
+ $("#frame-four").hide("slow");
+  $("#frame-three").slideToggle("slow");
+});
+
+$("#toTab5").click(function() {
+ $("#frame-four").hide("slow");
+  $("#frame-five").slideToggle("slow");
+});
+
+/* FRAME 5 */
+
+$("#toTab4from5").click(function() {
+ $("#frame-five").hide("slow");
+  $("#frame-four").slideToggle("slow");
+});
+
+$("#toTab1from5").click(function() {
+ $("#frame-five").hide("slow");
+  $("#frame-one").slideToggle("slow");
+});
+
+
+/* TO HOME */
+
+
+/* FRAME 1 */
+
+$(".toHome").click(function() {
+   $("#frame-one, #frame-two, #frame-three, #frame-four, #frame-five").hide("slow");
+   $("#home").slideToggle("slow");
+});
 
 
 });
